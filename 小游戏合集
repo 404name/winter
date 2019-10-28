@@ -1,0 +1,1546 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<windows.h> 
+
+int x,y,i,j,k,p,q,num = 1,round,place_x1 = 0,place_y1 = 0,place_x2 = 0,place_y2 = 0;              //象棋游戏的全局变量                                          //基本参数 
+int check_x,check_y,check_turn;
+char ch, turn = 'O',turn1 = 'N',temp,temp1;    	
+char check_1[9][3] ={"车","马","象","士","将","炮","兵","+-"};  //取棋子时只判断前8合法， 
+char check_2[9][3] ={"車","馬","相","仕","帥","砲","卒","+-"};	//下棋子时判断多一个空位合法 
+char check[3];
+
+void menu()             //主菜单 
+{
+	system("cls"); 
+	system("mode con cols=40 lines=25");      //迷你界面 
+    system("color 06");
+
+	printf("\n\n[=====================================]\n");
+	Sleep(100);
+    printf("[[-----------------------------------]]\n");
+    	Sleep(100);
+    printf("[[       |                    |      ]]\n");
+    	Sleep(100);
+
+    printf("[[       |   【C语言小游戏】  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |                    |      ]]\n");
+    	Sleep(100);
+    printf("[[       |    【菜单/nemu】   |      ]]\n");
+    	Sleep(100);
+    printf("[[       |                    |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ① 双人单机象棋   |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ②双人单机五子棋  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ③ 待开发的游戏   |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ④   更多信息     |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ⑤    退出        |      ]]\n");
+    	Sleep(100);
+    printf("[[       |  ----------------  |      ]]\n");
+    	Sleep(100);
+    printf("[[                                   ]]\n");
+    	
+    	Sleep(100);
+	printf("[=====================================]\n");
+		Sleep(200);
+	printf("         <<按下相应数字进行选择>>\n");
+    return;
+}
+
+void more()              //更多内容 
+{
+	system("cls"); 
+	system("mode con cols=100 lines=30");      //迷你界面 
+    system("color 66");
+	printf("[[---------------------------------------------------------------------------]]\n");
+    	Sleep(500);
+    printf("[[       |                                                             |     ]]\n");
+    	Sleep(500);
+    printf("[[       |   author: llz           blog:https://404name.github.io      |     ]]\n");
+    	Sleep(500); 
+    printf("[[       |   创作历程：                                                |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  1.小游戏《走迷宫》学会wasd控制移动                         |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  -------------------------------------------------------    |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  2.在其基础上制作了简易的五子棋                             |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  --------------------------------------------------------   |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  3.在制作五子棋过程中学会巧妙的用temp储存状态               |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  让五子棋的二维数组都可以在动态稳定                         |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  4.在五子棋基础上做象棋使2个字节的汉字也能同时移动实现取棋和杀棋  ]]\n");
+    	Sleep(500);
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  5.通过定义每一个棋子规则使规则完善                        |     ]]\n");
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  6.最后参考图书馆管理系统制作了小游戏合集系统界面           |     ]]\n");
+    printf("[=============================================================================]\n");
+    	Sleep(100);
+    printf("若有bug记得告诉下我，谢谢0.0\n"); 
+    printf("任意键继续\n");
+    getch();
+     printf("[[       |  --------------------------------------------------------- |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  游戏缺陷：                                                 |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  -------------------------------------------------------    |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  1.编程语言不够简练，代码太长不够精简                       |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  --------------------------------------------------------   |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  2.呈现游戏界面不能直白的分辨双方棋子                       |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  --------------------------------------------------------   |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  3.第一次做这类程序，许多游戏细节上未能处理好               |     ]]\n");                                 
+    	Sleep(500);
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    	Sleep(500);
+    printf("[[       |  更多：https://404name.github.io                            |     ]]\n");                                 
+    	Sleep(500);
+    printf("[[       |  ---------------------------------------------------------  |     ]]\n");
+    printf("按任意键返回");
+	getch();
+	return ; 	
+}
+void check_main1(char* temp,char* temp1,char* turn,char* turn1,int *num,int *if_return,char map[1000][1000])         //(象棋函数 判断 将方  下棋是否合法 
+{
+	check[0] = *temp;
+	check[1] = *temp1;
+	check[2] = '\0';
+	char a,b;								
+	for ( i = 0; i < 8; i++)        
+	{
+		if( strcmp(check_2[i],check) == 0)
+		{	
+			*temp = *turn;
+			*temp1 = *turn1;
+			*turn = 'O';
+			*turn1 = 'N'; 
+			if( i < 7){
+				printf("帅方的%s被吃\n",check_2[i]);
+				Sleep(500);
+			}	
+			*num = *num + 1;
+			for( k = 4; k <= 8; k = k + 2)   //判断帥是否死亡 
+			{
+				for(j = 15; j <= 23; j= j+ 4)
+				{
+					if(map[k][j] == check_2[4][0]  && map[k][j+1] == check_2[4][1])
+					{
+						place_x2 = k;
+						place_y2 = j;
+						break;
+					}
+				}
+				if( j <= 23)
+					break;
+		    }
+			if( k == 10)
+			{
+				printf("帥 被将死  将方获得胜利\n");
+				printf("按任意键返回菜单"); 
+					getch();
+					*if_return = 1; 
+					return;
+			}
+			for( k = 18; k <= 22; k = k + 2)   //判断将是否死亡 
+			{
+				for(j = 15; j <= 23; j= j+ 4)
+				{
+					if(map[k][j] == check_1[4][0]  && map[k][j+1] == check_1[4][1])
+					{
+						place_x1 = k;
+						place_y1 = j;
+						break;
+					}	
+				}
+				if( j <= 23)
+					break;
+			}
+			if( k == 24)
+				{
+					printf("将方 被将死  帥方获得胜利\n");
+					printf("按任意键返回菜单"); 
+					getch(); 
+					*if_return = 1; 
+					return; 
+				}
+			if( place_y1 == place_y2)
+			{
+				for( k = place_x2 + 2; k <= place_x1 - 2; k = k +2)
+				{
+					if(map[k][place_y1] != '+')
+					break;	
+				}
+				if( k == place_x1)
+				{
+					if(round == 1)
+						printf(" 将方对将   帥方胜利");
+					else if( round == 2)
+						printf(" 帥方对将   将方胜利");
+					printf("按任意键返回菜单"); 
+					getch(); 
+					*if_return = 1; 
+					return;
+				}   	
+			}
+			break; 
+		}	
+	}
+	if( i == 8)
+	{
+		printf("不合法的走法\n");
+		Sleep(500);
+	} 	 
+} 
+void check_main2(char* temp,char* temp1,char* turn,char* turn1,int *num,int *if_return,char map[1000][1000]) //象棋函数 判断  帥方下棋是否合法 
+{   
+	check[0] = *temp;
+	check[1] = *temp1;
+	check[2] = '\0';
+	char a,b;
+	for ( i = 0; i < 8; i++)        
+	{
+		if( strcmp(check_1[i],check) == 0)
+		{	
+			*temp = *turn;
+			*temp1 = *turn1;
+			*turn = 'O';
+			*turn1 = 'N'; 
+			if( i < 7)
+			{
+				printf("将方的%s被吃",check_1[i]);
+				Sleep(500);
+			}	
+		    *num = *num + 1; 
+			for( k = 4; k <= 8; k = k + 2)   //判断帥是否死亡 
+		    {
+				for(j = 15; j <= 23; j= j+ 4)
+				{
+					if(map[k][j] == check_2[4][0]  && map[k][j+1] == check_2[4][1])
+					{
+						place_x2 = k;
+						place_y2 = j;
+						break;
+					}
+				}
+				if( j <= 23)
+					break;
+			}
+			if( k == 10)
+			{
+				printf("帥 被将死  将方获得胜利\n");
+				printf("按任意键返回菜单"); 
+					getch();
+					*if_return = 1; 
+					return; 
+			}
+			for( k = 18; k <= 22; k = k + 2)   //判断将是否死亡 
+			{
+				for(j = 15; j <= 23; j= j+ 4)
+				{
+					if(map[k][j] == check_1[4][0]  && map[k][j+1] == check_1[4][1])
+					{
+						place_x1 = k;
+						place_y1 = j;
+						break;
+					}	
+				}
+				if( j <= 23)
+					break;
+			}
+			if( k == 24)
+				{
+					printf("将方 被将死  帥方获得胜利\n");
+					printf("按任意键返回菜单"); 
+					getch(); 
+					*if_return = 1; 
+					return;
+				}
+			if( place_y1 == place_y2)
+			{
+				for( k = place_x2 + 2; k <= place_x1 - 2; k = k +2)
+				{
+					if(map[k][place_y1] != '+')
+						break;	
+				}
+				if( k == place_x1)
+				{
+					if(round == 1)
+						printf(" 将方对将   帥方胜利");
+					else if( round == 2)
+						printf(" 帥方对将   将方胜利");
+					printf("按任意键返回菜单"); 
+					getch();
+					*if_return = 1;  
+					return;
+				}   	
+			} 
+			break; 
+		}	
+	}
+	if( i == 8)
+	{
+	printf("不合法的走法\n");
+	Sleep(500);
+	} 	 
+}
+
+void xiangqi()    //象棋主程序 
+{
+	char map[1000][1000]= {  "[[===================================]]",
+                             "[|①将         【|象棋|】        ②帥|]",
+                             "[====================================]]",
+                             "[[-----------------------------------]]",
+                             "[[ 車—馬—相—仕—帥—仕—相—馬—車]]", 
+                             "[[ |   |   |   | \\ | / |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-]]",                            
+                             "[[ |   |   |   | / | \\ |   |   |   | ]]",                           
+                             "[[ +-—砲—+-—+-—+-—+-—+-—砲—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   | ]]",
+                             "[[ 卒—+-—卒—+-—卒—+-—卒—+-—卒]]",
+                             "[[ |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[===================================]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   | ]]",
+                             "[[ 兵—+-—兵—+-—兵—+-—兵—+-—兵]]",
+                             "[[ |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—炮—+-—+-—+-—+-—+-—炮—+-]]",
+                             "[[ |   |   |   | \\ | / |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   | / | \\ |   |   |   | ]]",
+                             "[[ 车—马—象—士—将—士—象—马—车]]",
+                             "[[-----------------------------------]]",
+                             "[=====================================]"};
+	int if_return = 0;
+	system("mode con cols=40 lines=30");      //迷你界面 
+    system("color 70");
+    printf("[====================================]\n");
+    printf("[[----------------------------------]]\n");
+    printf("[[ |                              | ]]\n");
+    printf("[[ |       【<<游戏规则>>】       | ]]\n");
+    printf("[[ |                              | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  控制wasd双方轮流控制指针下棋| ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  键盘输入大小写 ' L '        | ]]\n");
+    printf("[[ |  都视为确认下棋              | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  为了方便区分棋子	          | ]]\n");
+    printf("[[ |  后手方全设为繁体复杂字体    | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  Tip目前已实现所有象棋规则   | ]]\n");
+    printf("[[ |  能检测出的bug都已解决       | ]]\n");
+    printf("[[ |  若因过程存在未发现bug见谅   | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  我已阅读规则，按任意键继续  | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+	printf("[===================================]\n");
+	getch();
+	system("mode con cols=40 lines=30");      //迷你界面 
+    system("color 70"); 				
+	for ( i = 0; i < 27; i++)
+	{
+			puts(map[i]);
+			Sleep(100);
+	}
+
+	x = 6,y = 19;
+    temp = map[x][y];
+	temp1 = map[x][y+1];     
+    while(num)            
+    {    
+	if(num % 2 == 1 &&num / 2 % 2 == 0){
+    	printf("现在是'将'的回合\n");
+    	round = 1;
+	}	
+	else if( num %2 == 1){
+		printf("现在轮到'帥'的回合了\n");
+		round = 2;  	
+	}               
+    ch = getch();
+    if ( ch == 's')         //下移 
+    {
+        if( map[x+1][y]!= '-')
+        {
+            map[x][y] =temp;
+            map[x][y+1] = temp1;
+            x = x + 2;
+            temp = map[x][y];
+            temp1 = map[x][y+1];
+            map[x][y] = turn;
+            map[x][y+1] = turn1;
+        }
+    }
+    else if ( ch == 'a')    //左移 
+    {
+        if(map[x][y-1]!=' ')
+        {
+            map[x][y] =temp;
+            map[x][y+1] = temp1;
+            y = y - 4;
+            temp = map[x][y];
+            temp1 = map[x][y+1];
+            map[x][y] = turn;
+            map[x][y+1] = turn1;
+        }
+    }
+    else if ( ch == 'w')    //上移 
+    {
+        if(  map[x-1][y]!= '-')
+        {
+            map[x][y] =temp;
+            map[x][y+1] = temp1;
+            x = x - 2;
+            temp = map[x][y];
+            temp1 = map[x][y+1];
+            map[x][y] = turn;
+            map[x][y+1] = turn1;
+        }
+    }
+    else if ( ch == 'd')    //右移 
+    {
+        if(map[x][y+2]!=']')
+        {
+            map[x][y] =temp;
+            map[x][y+1] = temp1;
+            y = y + 4;
+            temp = map[x][y];
+            temp1 = map[x][y+1];
+            map[x][y] = turn;
+            map[x][y+1] = turn1;
+        }
+    }
+        else if( ch == 'l' || ch =='L') 
+        {
+        	if(num % 2 == 1 && temp != '+' && temp1 != '-')   //取 
+        	{
+				check[0] = temp;
+				check[1] = temp1;
+				check[2] = '\0';
+				if( round == 1)
+				{
+					for (  i = 0; i < 7; i++)           //将方 
+					{
+						if( strcmp(check_1[i],check) == 0)
+						{
+							turn = temp;
+        					turn1 = temp1;
+        					temp = '+';
+        					temp1 = '-';  
+							check_x = x;
+							check_y = y;
+							check_turn = 10 + i;  
+							num++;    
+							break; 
+						}	
+					}
+					if( i == 7){
+						printf("这不是你的棋子\n");
+						Sleep(500);
+					}
+				 }
+				else if( round == 2)
+				{
+					for ( i = 0; i < 7; i++)           //将方 
+					{
+						if( strcmp(check_2[i],check) == 0)
+						{
+							turn = temp;
+        					turn1 = temp1;
+        					temp = '+';
+        					temp1 = '-';
+							check_x = x;
+							check_y = y;
+							check_turn = 20 + i;   
+							num++;    
+							break; 
+						}	
+					}
+					if( i == 7){
+						printf("这不是你的棋子\n");
+						Sleep(500);
+					}
+					
+				} 
+			}
+			else if( num % 2 == 0)                 //放 
+			{             
+		/*char check_1[8][3] ={"车","马","象","士","将","炮","卒","+-"}; 
+		char check_2[8][3] ={"俥","馬","相","仕","帥","軳","兵","+-"};*/ 
+			/*
+		中界 楚河上下坐标  12    15 
+		*/     
+		//  往下2  往又4 
+				if( check_turn < 20)          //将方 
+				{
+					if( check_turn == 10) 				//车    的走法规范     完成 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if(  y == check_y  )
+						{
+							if( x > check_x)
+							{
+								for(j = check_x + 2; j < x;j = j + 2)
+								{
+									if(map[j][y] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j >= x)
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 
+							if( x < check_x)
+							{
+								for(j = check_x - 2; j > x;j = j - 2)
+								{
+									if(map[j][y] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j <= x)
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 	
+						}
+							
+						else if(  x == check_x  )
+						{
+							if( y > check_y)
+							{
+								for(j = check_y + 4; j < y;j = j + 4)
+								{
+									if(map[x][j] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j >= y)
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 
+							if( y < check_y)
+							{
+								for(j = check_y - 4; j > y;j = j - 4)
+								{
+									if(map[x][j] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j <= y)
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 	
+						}	
+						else
+						{
+							printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+					if( check_turn == 11) 				//马    的走法规范   ok 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+							else if( (abs( x - check_x) == 2&& abs( y - check_y) == 8)&& map[check_x][(y+check_y)/2] =='+')
+						{
+							check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else if( (abs( x - check_x) == 4&& abs( y - check_y) == 4)&& map[(x + check_x)/2][check_y] == '+' )
+						{
+							check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}	
+						if( check_turn == 12) 				//相    的走法规范     完成 
+					{
+						if((x == check_x && y == check_y))
+							{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+						else if( x >= 15 &&(abs(y - check_y) == 8 && abs(x - check_x) == 4))
+							{
+							
+							 if((x == 22 && (y == 11 || y == 27))||(x == 18 && ( y == 3 || y == 19 || y == 35)) ||(x == 14 && (y == 11|| y ==27)))
+							{		
+								if( map[(x+check_x)/2][(y+check_y)/2] == '+')
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else
+								{
+									printf("棋子卡住，不可执行");
+									Sleep(500); 
+								} 
+							}
+							else
+							{
+									printf("不合法的下法\n");
+								Sleep(500);
+							}
+						}
+						else
+						{
+							printf("不合法的下法\n");
+							Sleep(500);
+						}  
+					}
+						if( check_turn == 13) 				//士    的走法规范    ok 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							
+						temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if( abs(x - check_x)== 2 && abs( y - check_y) == 4 &&((x==22 && (y == 15 || y == 23)) || ( x == 20 && y == 19) || ( x == 18 && ( y == 15 || y == 23))))
+						{
+							check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+						if( check_turn == 14) 				//将    的走法规范 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+					else if( ((abs(x - check_x)== 2 && abs( y - check_y) == 0 )|| (abs(x - check_x)== 0 && abs( y - check_y) == 4)) && x >= 18 && x <= 22 && y >= 15 && y <= 23 )
+						{
+							check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+						if( check_turn == 15) 				//炮    的走法规范 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if( y == check_y )
+						{
+							int check_pao = 0;
+							if( x > check_x)
+							{
+								for(j = check_x + 2; j<= x ;j = j+ 2)
+								{
+									if(map[j][y] == '+' );
+									else									
+										check_pao++;
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+							else
+							{
+								for(j = check_x - 2; j>= x;j = j - 2)
+								{
+									if(map[j][y] == '+' );
+									else
+									{
+										check_pao++;
+									}
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+						}
+						else if( x == check_x )
+						{
+								int check_pao = 0;
+							if( y > check_y)
+							{
+								for(j = check_y + 4; j<= y ;j = j+4)
+								{
+									if(map[x][j] == '+' );
+									else									
+										check_pao++;
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+							else
+							{
+								for(j = check_y - 4; j>= y;j = j - 4)
+								{
+									if(map[x][j] == '+' );
+									else
+										check_pao++;
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}	
+					if( check_turn == 16) 				//卒    的走法规范     成功 
+					{
+						if( x >= 14){
+							if((x == check_x && y == check_y))
+							{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+							else if( x == check_x - 2 && y == check_y)
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+							else
+							{
+								printf("不合法的下法\n");
+								Sleep(500);
+							}		
+						}
+						else{
+							if((x == check_x && y == check_y))
+							{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+							else if((x - check_x == 0 && abs(y-check_y) ==4) ||( x - check_x == -2 && abs(y-check_y) == 0))
+								check_main1(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+							else
+							{
+							printf("不合法的下法\n");
+							Sleep(500);
+							}	
+						}
+					}		
+				}
+				
+				
+				
+				else						   //帅方 
+				{ 
+					if( check_turn == 20) 				//车    的走法规范       完成 
+					{ 
+						if((x == check_x && y == check_y))
+						{		
+							
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if(  y == check_y  )
+						{
+							if( x > check_x)
+							{
+								for(j = check_x + 2; j < x;j = j + 2)
+								{
+									if(map[j][y] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j >= x)
+								check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 
+							if( x < check_x)
+							{
+								for(j = check_x - 2; j > x;j = j - 2)
+								{
+									if(map[j][y] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j <= x)
+								check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 	
+						}
+							
+						else if(  x == check_x  )
+						{
+							if( y > check_y)
+							{
+								for(j = check_y + 4; j < y;j = j + 4)
+								{
+									if(map[x][j] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j >= y)
+								check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 
+							if( y < check_y)
+							{
+								for(j = check_y - 4; j > y;j = j - 4)
+								{
+									if(map[x][j] == '+');
+									else
+									{
+									printf("不合法的下发\n");
+									Sleep(500);
+									break;
+									}
+								}
+								if( j <= y)
+								check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								} 	
+						}	
+						else
+						{
+							printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+					if( check_turn == 21) 				//马    的走法规范   ok 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+							else if( (abs( x - check_x) == 2&& abs( y - check_y) == 8)&& map[check_x][(y+check_y)/2] =='+')
+						{
+							check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else if( (abs( x - check_x) == 4&& abs( y - check_y) == 4)&& map[(x + check_x)/2][check_y] == '+' )
+						{
+							check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}	
+						if( check_turn == 22) 				//相    的走法规范    完成 
+					{
+						if((x == check_x && y == check_y))
+							{		
+						temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+						else if( x <= 12 && (abs(y - check_y) == 8 && abs(x - check_x) == 4))
+						{
+							
+							if((x == 4 && (y == 11 || y == 27))||(x == 8 && ( y == 3 || y == 19 || y == 35)) ||(x == 12 && (y == 11|| y ==27)))
+							{		
+								if( map[(x+check_x)/2][(y+check_y)/2] == '+')
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else
+								{
+									printf("棋子卡住，不可执行");
+									Sleep(500); 
+								} 
+							}
+							else
+							{
+									printf("不合法的下法\n");
+								Sleep(500);
+							}
+						}
+						else
+						{
+							printf("不合法的下法\n");
+							Sleep(500);
+						}  
+					}
+						if( check_turn == 23) 				//士    的走法规范   ok 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if( abs(x - check_x)== 2 && abs( y - check_y) == 4 &&((x==4 && (y == 15 || y == 23)) || ( x == 6 && y == 19) || ( x == 8 && ( y == 15 || y == 23))))
+						{
+							check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+						if( check_turn == 24) 				//将    的走法规范   ok
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if( ((abs(x - check_x)== 2 && abs( y - check_y) == 0 )|| (abs(x - check_x)== 0 && abs( y - check_y) == 4)) && x >= 4 && x <= 8 && y >= 15 && y <= 23 )
+						{
+							check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}
+						
+					if( check_turn == 25) 				//炮    的走法规范 
+					{
+						if((x == check_x && y == check_y))
+						{		
+							temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+						}
+						else if( y == check_y )
+						{
+							int check_pao = 0;
+							if( x > check_x)
+							{
+								for(j = check_x + 2; j<= x ;j = j+ 2)
+								{
+									if(map[j][y] == '+' );
+									else									
+										check_pao++;
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+							else
+							{
+								for(j = check_x - 2; j>= x;j = j - 2)
+								{
+									if(map[j][y] == '+' );
+									else
+									{
+										check_pao++;
+									}
+								}
+								if(check_pao == 1&& temp== '+')       //  直线行走但不可吃棋子 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+						}
+						else if( x == check_x )
+						{
+								int check_pao = 0;
+							if( y > check_y)
+							{
+								for(j = check_y + 4; j<= y ;j = j+4)
+								{
+									if(map[x][j] == '+' );
+									else									
+										check_pao++;
+								}
+								if(check_pao == 1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2 && temp != '+')      //跳跃吃棋 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+							else
+							{
+								for(j = check_y - 4 ; j>= y;j = j - 4)
+								{
+									if(map[x][j] == '+' );
+									else
+										check_pao++;
+								}
+								if(check_pao ==1&& temp == '+')       //  直线行走但不可吃棋子 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else if( check_pao == 2&& temp != '+')      //跳跃吃棋 
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map); 
+								else
+								{
+									printf("不合法的下法\n");
+									Sleep(500);
+								}
+							}
+						}
+						else
+						{
+								printf("不合法的下法\n");
+							Sleep(500);
+						}
+					}	
+					if( check_turn == 26) 				//卒    的走法规范     成功 
+					{
+						if( x <= 12){
+							if((x == check_x && y == check_y))
+							{		
+								temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+							else if( x == check_x + 2 && y == check_y)
+								check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+							else
+							{
+								printf("不合法的下法\n");
+								Sleep(500);
+							}		
+						}
+						else{
+							if((x == check_x && y == check_y))
+							{		
+								temp = turn;
+							temp1 = turn1;
+							turn = 'O';
+							turn1 = 'N';
+							num--;
+							printf("三思而后行\n");
+							printf("还是你的回合"); 
+							Sleep(500);
+							}
+								else if((x - check_x == 0 && abs(y-check_y) ==4) ||( x - check_x == 2 && abs(y-check_y) == 0))
+									check_main2(&temp,&temp1,&turn,&turn1,&num,&if_return,map);
+								else{
+								printf("不合法的下法\n");
+								Sleep(500);
+								}	
+						}
+					}
+				} 
+			}
+        }
+        system("cls");
+        if( if_return) return;
+        for(i = 0; i < 27; i++)
+        puts(map[i]);
+        
+    }
+    Sleep(5000);
+ }
+ 
+void wuziqi()
+{
+   int x,y,i,p,q,num = 1,check;
+    char ch, turn,temp;
+    system("mode con cols=40 lines=30");      //迷你界面 
+    system("color 30");
+    printf("[====================================]\n");
+    printf("[[----------------------------------]]\n");
+    printf("[[ |                              | ]]\n");
+    printf("[[ |       【<<游戏规则>>】       | ]]\n");
+    printf("[[ |                              | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  控制wasd双方轮流控制指针下棋| ]]\n");
+    printf("[[ |  游戏保证了棋子不会重叠      | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  键盘输入大小写 ' L '        | ]]\n");
+    printf("[[ |  都视为确认下棋              | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  移动鼠标指针会覆盖原有棋子  | ]]\n");
+    printf("[[ |  移开即恢复坐标原有状态      | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+    printf("[[ |  我已阅读规则，按任意键继续  | ]]\n");
+    printf("[[ |------------------------------| ]]\n");
+	printf("[===================================]\n");
+	getch();
+	system("mode con cols=65 lines=43");      //迷你界面 
+    system("color 30");
+   char map[1000][1000]= {  "||===========================================================||",
+                             "||   x                   ||欢乐五子棋||                 o    ||",
+                             "||                       ==============                      ||",
+                             "[=============================================================]",
+                             "[[===========================================================]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ]]",
+                             "[[ +-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-—+-]]",
+                             "[[===========================================================]]",
+                             "[=============================================================]"
+    };
+    printf("游戏加载中ing\n将窗口上移以便获取下方信息\n"); 
+	for(i = 0; i < 37; i++)
+    {
+		puts(map[i]);
+		Sleep(100); 
+	}
+       
+    
+    x = 11,y = 19;
+    temp = map[x][y];           //temp是关键：保存光标所指坐标上一次的状态 ，方便恢复与新建状态 
+
+    while(num)                 //主程序：实现移动光标并指定坐标下棋 
+    {                          //保证不出界，且保证已下棋位置不会再次被覆盖 
+        if(num % 2 != 0){
+        	turn = 'x';
+			printf("轮到 %c 下了\n这是你的第 %d 步棋\n",turn,(num + 1) / 2); 
+		}
+        else{
+        	turn = 'o';
+        	printf("这是 %c 的回合\n这是你的第 %d 步棋\n",turn,num /2);
+		} 
+		if(num > 544)
+			return;
+		else if(num > 540)
+		 	printf("有的惊喜就是在你也想不到的的情况下发生"); 
+		else if( num > 500)
+        	printf("填满有惊喜喔") ;
+		else if( num > 200)
+        	printf("你可以填满棋盘的"); 
+		else if( num > 150)
+        	printf("你眼睛不花吗") ;
+		else if( num > 100)
+        	printf("还没有分出胜负ne ") ;	
+		else if( num > 80) 
+        	printf("距离成功不远了") ; 
+		else if( num > 50)
+        	printf("看来你还能继续下") ;
+		else if( num > 30)
+        	printf("你还能清楚的看清棋盘吗？") ;
+		
+		
+		else if( num > 20)
+        	printf("快接近胜利了吗？\n") ;
+		
+		
+	
+		
+        
+         
+		
+		   
+        ch = getch();
+        if ( ch == 's')         //下移 
+        {
+            if( map[x+1][y]!= '=' &&map[x+1][y]!= '-')
+            {
+                map[x][y] = temp;
+                x = x + 2;
+                temp = map[x][y];
+                map[x][y] = turn;
+            }
+        }
+        else if ( ch == 'a')    //左移 
+        {
+            if( map[x][y-3]== '-' )
+            {
+                map[x][y] = temp;
+                y = y - 4;
+                temp = map[x][y];
+                map[x][y] = turn;
+            }
+        }
+        else if ( ch == 'w')    //上移 
+        {
+            if(  map[x-1][y]!= '=' && map[x-1][y]!= '-')
+            {
+                map[x][y] = temp;
+                x = x - 2;
+                temp = map[x][y];
+                map[x][y] = turn;
+            }
+        }
+        else if ( ch == 'd')    //右移 
+        {
+            if( map[x][y+5]== '-' )
+            {
+                map[x][y] =temp;
+                y = y + 4;
+                temp = map[x][y];
+                map[x][y] = turn;
+                
+            }
+        }
+        else if( ch == 'l' || ch =='L')   //确认下棋后改变坐标状态，并且判断是否伍连。 
+        {
+            if(temp == '+')
+            {
+                map[x][y] = turn;
+                temp = map[x][y];
+                num++;
+                
+                
+                check=1;                                //判断水平方向 
+                {
+                    p=x;
+                    q=y;
+                    q = q - 4;
+                    
+                    if( q >=0&& q<  62)
+                    while(q >=0&& q< 62  &&  map[p][q]== turn)//防止数组下标越界
+                    {
+                    	check++;
+                   		q = q - 4;
+                    }  
+                    p=x;
+                    q=y;
+                    q = q + 4;
+                    
+                    if( q >=0&& q< 62 )
+                    while(q >=0&& q<  62 &&  map[p][q] == turn)//防止数组下标越界
+                    {
+                    	check++;
+                    	q = q + 4;
+                    } 
+                    if(check  >= 5 ){
+                    printf("%c win the game\n按任意键退出游戏",turn);
+                    getch();
+                    return ;}
+                                                       
+                }
+                
+                
+                check=1;								//判断垂直方向 
+                {
+                    p=x;
+                    q=y;
+                    p = p - 2;
+                    
+                    if( p >=0&& p<= 37)
+	                    while(p >=0&& p<= 37  &&  map[p][q]== turn)//防止数组下标越界
+	                    {
+	                    	check++;
+	                   		p = p - 2;
+	                    }  
+                    p=x;
+                    q=y;
+                    p = p + 2;
+                    
+                    if( p >=0&& p<= 37 )
+	                    while(p >=0&& p<=  37 &&  map[p][q] == turn)//防止数组下标越界
+	                    {
+	                    	check++;
+	                    	p = p + 2;
+	                    } 
+	                if(check  >= 5 ){
+	                printf("%c win the game\n多次按任意键退出游戏",turn);
+	                getch();
+	                getch();
+					getch(); 
+                    return;}
+                }
+                check=1;                                //判断左斜方向 
+                {
+                    p=x;
+                    q=y;
+                    q = q - 4;
+                    p = p - 2; 
+                    
+                    if( q >=0&& q<  62 && p >=0 && p <= 37)
+                    while(q >=0&& q<  62 && p >=0 && p <= 37 &&  map[p][q]== turn)//防止数组下标越界
+                    {
+                    	check++;
+                   		q = q - 4;
+                   		p = p - 2;;
+                    }  
+                    p=x;
+                    q=y;
+                    q = q + 4;
+                    p = p + 2;
+                    if( q >=0&& q<  62 && p >=0 && p <= 37 )
+                    while(q >=0&& q<  62 && p >=0 && p <= 37 && map[p][q] == turn)//防止数组下标越界
+                    {
+                    	check++;
+                    	q = q + 4;
+                    	p = p + 2; 
+                    } 
+                    if(check  >= 5 ){
+                    printf("%c win the game\n按任意键退出游戏",turn);
+                    getch();
+                      getch();
+                        getch();
+                    return;}
+                    
+                    check=1;                                //判断右斜方向 
+                {
+                    p=x;
+                    q=y;
+                    q = q + 4;
+                    p = p - 2; 
+                    
+                    if( q >=0&& q<  62 && p >=0 && p <= 37)
+                    while(q >=0&& q<  62 && p >=0 && p <= 37 &&  map[p][q]== turn)//防止数组下标越界
+                    {
+                    	check++;
+                   		q= q + 4;
+                   		p = p - 2;
+                    }  
+                    p=x;
+                    q=y;
+                    q = q - 4;
+                    p = p + 2;
+                    if( q >=0&& q<  62 && p >=0 && p <= 37 )
+                    while(q >=0&& q<  62 && p >=0 && p <= 37 && map[p][q] == turn)//防止数组下标越界
+                    {
+                    	check++;
+                    	q = q - 4;
+                    	p = p + 2; 
+                    } 
+                    if(check  >= 5 ){
+                    printf("%c win the game\n按任意键退出游戏",turn);
+                    getch();
+                    return;}
+                                                       
+                }                                    
+                }
+            }
+            else if( temp =='o') {
+                printf("此处不可以下棋！！\n");
+                Sleep(500);
+            }
+            else if( temp =='x') {
+                printf("此处不可以下棋！！\n");
+                Sleep(500);
+            }
+
+
+        }
+        system("cls");
+        for(i = 0; i < 37; i++)
+            puts(map[i]);
+    }
+}
+
+
+
+int main()
+{ 
+	int choise;
+    while(1)
+    {
+		menu();
+		char choise;
+		choise = getch();
+        switch(choise)
+        {
+        case '1': xiangqi();break; 
+        case '2': wuziqi();break;
+        case '3': system("cls");printf("\n\n还在开发呢~~返回菜单\n\n");Sleep(1000);break;
+        case '4': more();break; 
+        case '5': {system("cls");
+				printf("\n\n确定退出吗\n\n1.Yes    2.No\n");
+				printf("\n( 1 / 2 )\n");
+				char b;
+				b = getch();
+				if( b == '1') return 0;
+				else if( b == '2') break; 
+				else break;
+		default: printf("请输入1 / 2确定是与否");Sleep(1000);break;
+			}
+        }
+    }
+}
