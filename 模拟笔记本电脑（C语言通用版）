@@ -1,6 +1,11 @@
 /*--------------------------------------------------------- 
 
-VC不能在for循环里面定义变量这里把变量提取出来了
+用VC的一定要选则 Win32 Console Application工程
+
+2.25最新版本
+未加入新功能
+修复了一些bug，适配了所有编译器。。。
+可直接运行exe或者赋值。
 
 程序： 模拟笔记本电脑   （纯C语言，可直接编译器运行） 
 作者： 0.0
@@ -177,7 +182,7 @@ int keyboard[20][30] = {
 int next[9][2] = {{0}, {0}, {0}, {0}, {0}, {-1, 0}, {0, -1}, {1, 0}, {0, 1}}; //给键盘传给虚拟键盘的键盘控制虚拟电脑用
 int computer_map[3][8] = {{0, 0, 0, 0, 0}, {0, 1, 2, 3, 4}, {5, 0, 0, 0, 0}}; //对应的移动操作记录
 int computer_map_place[6][2] = {{0}, {2, 9}, {2, 19}, {2, 29}, {2, 40}, {6, 12}};
-int cx = 1, cy = 1, tcx = computer_map_place[computer_map[cx][cy]][0], tcy = computer_map_place[computer_map[cx][cy]][1], lcx = cx, lcy = cy;
+int cx , cy , tcx, tcy, lcx, lcy;
 int board_place[120][5] = { //这是按键的信息  下标依次对应  -返回值 -按下shift下的返回值2  -键盘字符长度  -字符坐标x   -y
     {0, 0, 0, 0, 0},        //第一项如果是字符那么那就是返回字符    如果是数字1-9那么就是功能按键功能对应如下
     {1, 1, 3, 21, 19},      //1-10
@@ -313,13 +318,13 @@ void gotoxy(int x, int y) //坐标函数
 }
 void init_game(int n)
 { //初始化汉诺塔
+	int i, j;
     time = 50 / n;
     left = 1, mid = 2 * (n + 1), right = mid + 2 * n + 1;
     len = 3 * (2 * n + 1);
     width = n + 1;
     ttx = mid_x - width / 2;
-    tty = mid_y - len / 2;
-    int i, j;
+    tty = mid_y - len / 2;  
     for (i = 0; i <= width; i++)
     {
         for (j = 0, num = i; j <= len; j++)
@@ -446,6 +451,12 @@ void move_hnt(int a, int b, int c, char aa, char bb, char cc, int n)
 }
 void init()
 { //初始化整个程序
+	int i;
+	tcx = computer_map_place[computer_map[cx][cy]][0];
+	tcy = computer_map_place[computer_map[cx][cy]][1];
+	lcx = cx, lcy = cy;
+	cx = 1;
+	cy = 1;
     printf("↑ ↓ ← → 空格    进行操作\n\n");
     printf("用空格按下电源键即可进行开机\n\n");
     printf("xp系统祝你使用愉快~~\n\n");
@@ -454,7 +465,6 @@ void init()
     printf("汉诺塔程序运行过程中是不能中止的，尽量开6个以下\n"); //这里是原本写了一个版本，自动变化函数+人工输入函数能中途退出，但改一下整个程序都要改动，就放弃了那个版本
     printf("按任意键继续\n");
     getch();
-    int i, j, k;
     system("color 70");
     system("mode con cols=125 lines=60");
     for (i = 0; i <= 40; i++)
@@ -474,14 +484,14 @@ void init()
 }
 void init_start()
 { // 开机 + 动态加载页面 + 打开输入密码权限
-    gotoxy(0, 0);
-    int i;
+    
+    int i,l, j;
+	gotoxy(0, 0);
     for (i = 0; i <= 16; i++)
     {
         printf("%s\n", start[i]);
         Sleep(100);
     }
-    int l, j;
     for (l = 0; l < 3; l++)
     { //动态加载
         for (i = 53; i <= 71; i = i + 2)
@@ -518,10 +528,11 @@ void init_start()
 }
 void load_desktop()
 { //加载桌面
+	int i;
     if_into_desktop = 1;
-    if_input == 0;
+    if_input = 0;
     gotoxy(0, 0);
-    int i;
+    
     for (i = 0; i <= 16; i++)
     {
         printf("%s\n", desktop[i]);
@@ -530,8 +541,8 @@ void load_desktop()
 }
 void end()
 { //加载关机 （关机做的有点仓促）
-    gotoxy(0, 0);
     int i;
+	gotoxy(0, 0);
     for (i = 0; i <= 16; i++)
     {
         printf("%s\n", ending[i]);
@@ -546,8 +557,8 @@ void end()
 }
 void load_more()
 { //更多信息
+	int i;
     gotoxy(0, 0);
-    int i;
     for (i = 0; i <= 16; i++)
     {
         printf("%s\n", thinking[i]);
@@ -556,9 +567,10 @@ void load_more()
 }
 void load_game()
 { //加载汉诺塔程序
+	int i;
     if_into_desktop = 0;
     gotoxy(0, 0);
-    int i;
+    
     for (i = 0; i <= 16; i++)
     {
         printf("%s\n", game_hnt[i]);
@@ -574,7 +586,7 @@ void load_game()
 }
 int move()
 { //控制虚拟键盘的指针移动函数
-    int i, k;
+    int i;
     char ch = '\0', ch1 = '\0';
     while (ch != ' ')
     {
@@ -722,12 +734,13 @@ void put_function_to_computer(int function)
     }
     else if (function == 3 && if_game == 1 && put_in_num == 1 && put_in_computer[0] >= '1' && put_in_computer[0] <= '9')
     {
+		int i, j;
         gotoxy(mid_y - 16, mid_x);
         printf("                                               ");
         init_game(put_in_computer[0] - '0');
         move_hnt(left, mid, right, 'a', 'b', 'c', put_in_computer[0] - '0');
         Sleep(2000);
-        int i, j;
+        
         for (i = 0; i <= width; i++)
         {
             for (j = 0; j <= len; j++)
@@ -735,7 +748,7 @@ void put_function_to_computer(int function)
                 game_map[i][j] = 0;
             }
         }
-        if_game == 0;
+        if_game = 0;
         if_input = 0;
         load_desktop();
         if_into_desktop = 1;
