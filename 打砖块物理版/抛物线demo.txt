@@ -1,0 +1,254 @@
+#include <conio.h> //用于getch（）
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h> //用于rand
+#include <string.h>
+#include <windows.h>
+#define pi 3.14
+const double g = 10; //非标准正坐标系
+/*------------------------ 
+
+注意：这里是用的cpp写的，要改c语言则只要把全局变量初始化放进init里面即可 
+
+斜抛运动小demo 
+
+原理前往main函数
+
+若要取消贪吃蛇请将food变为0 
+--------------------------*/
+void HideCursor() //光标隐藏
+{
+    CONSOLE_CURSOR_INFO cursor_info = {1, 0}; //后边的0代表光标不可见
+    SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
+}
+
+void gotoxy(int x, int y) //坐标函数
+{
+    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD pos;
+    pos.X = x;
+    pos.Y = y;
+    SetConsoleCursorPosition(handle, pos);
+}
+
+//变量区
+char map[1000][1000];
+int width = 40, length = 150;
+double X, Y, x, y, Vx, Vy, t;
+int old_x, old_y, head = 0, tail = 0, max = 60, step = 0, if_miss = 0, food = 500, color = 0;
+
+struct Step
+{
+    int x;
+    int y;
+} s[1000];
+
+//double C[8] = {0,10,30,70,90};
+
+double C = 70; //可调整的角度，自右向上转角  0-水平出射  90垂直上抛
+
+void init()
+{
+    printf("如果花屏则调整为18字号（不同电脑可能情况不同）\n按回车开始");
+    getchar();
+    HideCursor();
+    gotoxy(0, 0);
+    for (int i = 0; i <= width; i++){
+        for (int j = 0; j <= length; j++){
+            if (i == 0 || i == width || j == 0 || j == length)
+                map[i][j] = '#';
+            else
+                map[i][j] = ' ';
+        }
+    }
+    while (food--){
+        int a = rand() % width;
+        int b = rand() % length;
+        map[a][b] = '*';
+    }
+    for (int i = 0; i <= width; i++){
+        for (int j = 0; j <= length; j++){
+            printf("%c", map[i][j]);
+        }
+        printf("\n");
+    }
+    X = width - 5; //设置初始位置
+    Y = 4;
+    old_x = X;
+    old_y = Y;
+    s[step].x = old_x;
+    s[step].y = old_y;             //循环结构体储存“蛇”的身体
+    int V = 25, cut = 0;           //初速度
+    Vx = -V * sin(C * pi / 180.0); //分解速度
+    Vy = V * cos(C * pi / 180.0);  //速度向右向下为正方向
+}
+
+int main()
+{
+    init();
+    int cnt = 10000; //自己设置，可以无限
+    int flag = 1;    //判断情况
+
+    //主要算法区域
+    while (cnt--){
+        double t1, t2;
+        double s1, s2;
+        //这里的“轨迹”是存在“循环队列”的结构体中的
+        //map数组一开始只打印一次，随后在原数组上的改变不会作用显示。
+        //显示轨迹的其实还是打印空格，但不同的是颜色
+        //消去轨迹也打印白色的空格：SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 07);
+        /*-------------------------------------------------------
+                核心公式：   X = X0 + Vx * t + 1/2 * VX * t * t;        
+                             Y = Y0 + Vy * t;
+                核心思想：  ·如果选择时间作为移动参考，则每秒会出现点相差太远
+                            难以实现连续。
+                            ·这里反过来，以连续为前提，尝试找出每移动一个单位
+                            需要多少时间，则能依次找出一个连续的曲线。
+
+                出现问题：  c语言数组只能是整数，所以移动方向只能存在水平和竖直，
+                            不能依照运动方向实现往某个特定的角度移动一个单位。
+                            并且要排除断节问题（即打印的曲线断断续续）
+
+                解决方法：  把特移动方向移动单位分解到X，Y上。
+                            分别算出 X 增加一个单位长度 应该增加的 Y 的距离 s1  <=> flag == 1
+                                     Y 增加一个单位长度 应该增加的 X 的距离 s2  <=> flag == 2
+                            
+                            优先选择更短的min（s1,s2),然后以flag对应不同的模式作为下一次移动的基准。
+                            这样操作能保证线段仅仅只在水平与竖直方向移动时线段仍能连续
+
+                            打个比方：一段斜率为2的直线
+                            x增加1 Y增加2你看，这里Y脱节了会一下子在Y上移动了2格。
+                            但实际上我们看
+                            Y增加1 X实际上只增加0.5.
+                            所以一段曲线，他的微元构成的直线不管斜率多偏僻，都能连续打印。
+                            这就是为什么取min（s1,s2）决定移动模式的原因。
+                            这样能保证仅仅只在上移动一个单位int（Y），而int（X）是不增加的，浮点型的X又把量累计到下一次在判断。
+
+                最后实现：
+                            X，Y用double储存，保证实际叠加能连续；
+                            而实际打印，是不能说（5,6.28）这样的浮点型能在c语言上打印，所以我们采用int整型的old_x,old_y来承接X，Y以便于打印在屏幕上。
+                            
+                            我们按照时间为循环只能在屏幕上打印一串断断续续的类抛物线的点。
+                            但我们按照走一个“方向单位”，依次类叠，我们就能得到一串连续的线。
+                            
+                结果实现：  由于，算法偏向不严谨，可能会出现小部分开局断节bug，但随着循环推迟，后期能100%连续！！
+                            
+                            加入人为修正
+
+                            经测试小范围的数据能完美打印出物理抛物线！！！
+        ------------------------------------------------------------*/
+        //算法起点：
+
+        //二、当Y增加一个单位方向时  （把这个简单的放前面可以类比知道后面x那里在干嘛）
+        t2 = 1.0 / fabs(Vy);
+        s2 = Vx * t2 + 0.5 * g * t2 * t2;
+
+        //一、当X改变一个单位方向时（考虑）
+        // 1/2 g*t*t + vx * t = 1 解一元二次方程（这里判断  增加后减少仍然是1    可能会有4种情况）
+        //就用公式解这个5*t*t + Vx t - 1= 0;（正负1）
+        //我这里的确复杂了，但是保险，如果能设计更好的算法就可以多试试。
+        double temp;
+        double x1_t1 = (-Vx + sqrt(Vx * Vx + 20)) / 10;
+        double x2_t1 = (-Vx - sqrt(Vx * Vx + 20)) / 10;
+        double x3_t1 = (-Vx + sqrt(Vx * Vx - 20)) / 10;
+        double x4_t1 = (-Vx - sqrt(Vx * Vx - 20)) / 10;
+        if (x1_t1 > 0 && x2_t1 > 0)
+            t1 = x1_t1 < x2_t1 ? x1_t1 : x2_t1;
+        else
+            t1 = x1_t1 >= 0 ? x1_t1 : x2_t1;
+        if (x3_t1 > 0 && x4_t1 > 0)
+            temp = x3_t1 < x4_t1 ? x3_t1 : x4_t1;
+        else if (x3_t1 * x4_t1 < 0)
+            temp = x3_t1 >= 0 ? x3_t1 : x4_t1;
+        else
+            temp = 10;
+        t1 = t1 < temp ? t1 : temp;
+        //这里主要就为了求一个t1
+        s1 = t1 * Vy;
+
+        //进行择短判断
+        if ((int)s1 == 0)
+            flag = 1;
+        else if ((int)s2 == 0)
+            flag = 2;
+        else
+            flag = s1 < s2 ? 1 : 2;
+        //选择最优进行处理
+        if (flag == 1){
+            X = X + Vx * t1 + 5 * t1 * t1; //等价于 X = X +- 1  （因为速度是带方向的，求出时间在反过来求1此时的1也是带正负号的就不要分类考虑了）
+            Y = Y + s1;                    //X改变1 Y理论上改变的大小。
+            Vx = Vx + g * t1;
+        }
+        else if (flag == 2){
+            Y = Y + Vy * t2; //等价于 Y = Y +- 1
+            X = X + s2;      //Y改变1 X理论上改变的大小。
+            Vx = Vx + g * t2;
+        }
+
+        old_x = (int)X; //整型承接下一步的移动后面存入循环结构体数组以打印
+        old_y = (int)Y;
+        //算法终点
+        //--------------------------------------------------------------------------------------------------------
+        //之后是界面改变逻辑实现
+        //碰墙改变方向
+        if (X >= width - 2 || X <= 2){
+            color = (color + 1) % 5;
+            Vx = -Vx;
+        }
+        if (Y >= length - 2 || Y <= 2){
+            color = (color + 1) % 5;
+            Vy = -Vy;
+        }
+
+        //消除末尾节点
+        if (if_miss == 1){
+            //map是后台数组，如果身体经过一次就++，消去一次就--直到回复原来状态就可以打印消去。防止自己吃掉自己的身体
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 07);
+            gotoxy(s[step].y, s[step].x);
+            map[s[step].x][s[step].y]--;
+            if (map[s[step].x][s[step].y] == ' ') //防止自己吃自己
+                printf(" ");
+        }
+        s[step].x = old_x;
+        s[step].y = old_y;
+
+        if (map[s[step].x][s[step].y] == '*') //（贪吃蛇模式）吃到食物身体增长
+        {
+            map[s[step].x][s[step].y] = ' ';
+            max++;
+            gotoxy(2, width + 2);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 07);
+            printf("len:%5d", max);
+        }
+
+        //决定身体颜色
+        switch (color)
+        {
+        case 0:
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 60);
+            break; //蓝色
+        case 1:
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 70);
+            break; //红色
+        case 2:
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 40);
+            break; //绿色
+        case 3:
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 30);
+            break; //深蓝色
+        case 4:
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 80);
+            break; //紫色
+        }
+        gotoxy(s[step].y, s[step].x);
+        map[s[step].x][s[step].y]++;
+        printf(" ");
+        step++;
+        if (step >= max)
+        {
+            if_miss = 1; //如果长度开始大于最长长度就要开始从末尾消除尾节点了
+        }
+        step = step % max;
+        Sleep(10); //把10改成竖直坐标关于高度的公式可以模拟下坠的时候速度
+    }
+}
