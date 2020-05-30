@@ -512,6 +512,7 @@ void init_start()
     input_x = 9;
     input_y = 77;
     input_max = 18;
+    if_input_password = 1;
 }
 void load_desktop()
 { //加载桌面
@@ -696,9 +697,19 @@ void put_function_to_computer(int function)
     { //删除字符，但不可越界
         put_in_num--;
         put_in_computer[put_in_num] = '\0';
-        gotoxy(input_y, input_x);
-        printf("%s", put_in_computer);
-        printf(" ");
+        if (if_input_password == 1)
+        {
+            gotoxy(input_y + put_in_num, input_x);
+            printf(" ");
+            gotoxy(input_y + put_in_num, input_x);
+        }
+        else
+        {
+            gotoxy(input_y, input_x);
+            printf("%s", put_in_computer);
+            printf(" ");
+            gotoxy(input_y, input_x);
+        }
     }
     if (function == 4)
     { //切换大小写
@@ -712,6 +723,7 @@ void put_function_to_computer(int function)
         if (strcmp(password_0, put_in_computer) == 0)
         {
             load_desktop();
+            if_input_password = 0;
             if_input = 0;
             put_in_num = 0;
             put_in_computer[put_in_num] = '\0';
