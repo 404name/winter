@@ -1,7 +1,7 @@
 # 模拟笔记本完整版
 
-> 想玩更多功能建议选择此版本
-> 想看源码学习建议选择[700行第一代精简版本](https://github.com/404name/winter/tree/master/%E6%A8%A1%E6%8B%9F%E7%AC%94%E8%AE%B0%E6%9C%AC/%E6%A8%A1%E6%8B%9F%E7%AC%94%E8%AE%B0%E6%9C%AC%EF%BC%88%E7%BB%8F%E5%85%B8%E7%AE%80%E6%B4%81%E7%89%88%EF%BC%89)
+>- 想玩更多功能建议选择此版本
+>- 想看源码学习建议选择[700行第一代精简版本](https://github.com/404name/winter/tree/master/%E6%A8%A1%E6%8B%9F%E7%AC%94%E8%AE%B0%E6%9C%AC/%E6%A8%A1%E6%8B%9F%E7%AC%94%E8%AE%B0%E6%9C%AC%EF%BC%88%E7%BB%8F%E5%85%B8%E7%AE%80%E6%B4%81%E7%89%88%EF%BC%89)
 ### 3.0追加更新：
 
     完善功能：（桌面软件全部更新可用，功能完善，更加贴近xp系统。）
