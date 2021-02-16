@@ -1,5 +1,5 @@
 # Winter_C_Program#2020
-
+# github下载慢请前往[Gitee](https://gitee.com/N404name/winter)
 ##### 2020上半年疫情超长假期写的一些有趣的小代码(C语言小游戏+C语言小程序)
 > 代码均为纯C语言，未调用任何第三方库，可以直接在任何win系统下跑
 ##### 传送门：[2019大一上C语言程序集合](https://github.com/404name/C-game)
