@@ -1,15 +1,15 @@
-#include <conio.h> //ÓÃÓÚgetch£¨£©
+#include <conio.h> //ç”¨äºgetchï¼ˆï¼‰
 #include <math.h>
 #include <stdio.h>
-#include <stdlib.h> //ÓÃÓÚrand
+#include <stdlib.h> //ç”¨äºrand
 #include <string.h>
 #include <time.h>
 #include <windows.h>
-//¡ö¡õ
+//â– â–¡
 /*-----
-ÈÕÖ¾£º
-¡¤ÈËÎïÒÆ¶¯¸ñÍâËãÊ±¼ä£¬ÓĞÏÂ½µ¼Ó¿ì¸üĞÂ£¬ÉÏÉıÍ¬Ñù£¬ÕâÊ±ºò²»ËãËæ»úÊı£¬Æ½³£×ß¶¯Ëæ»úÊı
-¡¤win»­Ãæ¸üĞÂ¡£¿ªÍ·½éÉÜ£¬Ê¤Àû¡£ÏÂ½µÊ±¼ä¿ØÖÆ 
+æ—¥å¿—ï¼š
+Â·äººç‰©ç§»åŠ¨æ ¼å¤–ç®—æ—¶é—´ï¼Œæœ‰ä¸‹é™åŠ å¿«æ›´æ–°ï¼Œä¸Šå‡åŒæ ·ï¼Œè¿™æ—¶å€™ä¸ç®—éšæœºæ•°ï¼Œå¹³å¸¸èµ°åŠ¨éšæœºæ•°
+Â·winç”»é¢æ›´æ–°ã€‚å¼€å¤´ä»‹ç»ï¼Œèƒœåˆ©ã€‚ä¸‹é™æ—¶é—´æ§åˆ¶ 
 
 
 
@@ -19,8 +19,8 @@ int map[500][500] = {0};
 int color_map[500][500] = {0};
 int check_sum[500][2] = {0};
 int if_full = 0;
-//ÏÂ±ê°´Ë³ĞòÎª  ×Ü·Ö  Ó¦¸ÃÏÂ½µµÄ²ãÊı
-//Âß¼­Ë³ĞòÊÇË­  check_sun´¢´æ¶ÔÓ¦map²ãÊıµÄºÍ£¬µ±ÂúµÄÊ±ºò£¬ËûÏòÉÏµÄÓĞÖµµÄ²ãÊı¾ÍÒªÔö¼ÓÏàÓ¦µÄ¸Ã½µ²ãÊı¡£
+//ä¸‹æ ‡æŒ‰é¡ºåºä¸º  æ€»åˆ†  åº”è¯¥ä¸‹é™çš„å±‚æ•°
+//é€»è¾‘é¡ºåºæ˜¯è°  check_sunå‚¨å­˜å¯¹åº”mapå±‚æ•°çš„å’Œï¼Œå½“æ»¡çš„æ—¶å€™ï¼Œä»–å‘ä¸Šçš„æœ‰å€¼çš„å±‚æ•°å°±è¦å¢åŠ ç›¸åº”çš„è¯¥é™å±‚æ•°ã€‚
 int height, width, top;
 int start_x = 6, start_y = 10, tx, ty, x, y, times, cnt_time, old_index0, index0, cnt = 0;
 int if_change = 0, if_death = 0, reduce_time = 0;
@@ -29,18 +29,18 @@ int next_position_x[2] = {1, 1}, next_position_y[2] = {10, 2}, show_next = 0, sh
 int now_color = 3, next_color = 2, next_next_color = 3;
 
 int death_line = 8;
-char message[7][20] = { //×Ô¶¨Òålogo
+char message[7][20] = { //è‡ªå®šä¹‰logo
     {"[][][][][]"},
     {"[Tetris  ]"},
     {"[    plus]"},
-    {"[¶íÂŞË¹  ]"},
-    {"[·½¿éplus]"},
+    {"[ä¿„ç½—æ–¯  ]"},
+    {"[æ–¹å—plus]"},
     {"[][][][][]"}};
 struct Pass
 {
     char ss[10][11];
 } pass[20] = {
-    {{{"0000000000"}, //1¿ÉÒÔ×Ô¼ºÉèÖÃ»ù´¡¹Ø¿¨ 0¿ÕÆø 1×©¿é
+    {{{"0000000000"}, //1å¯ä»¥è‡ªå·±è®¾ç½®åŸºç¡€å…³å¡ 0ç©ºæ°” 1ç –å—
       {"0000000000"},
       {"0000000000"},
       {"0000000000"},
@@ -48,15 +48,15 @@ struct Pass
       {"0000000000"},
       {"0000000000"},
       {"0000000000"}}}};
-int now_pass = 1; //¶à¹Ø¿¨£¬ÏÖÔÚÄ¬ÈÏµÚÒ»¹Ø
+int now_pass = 1; //å¤šå…³å¡ï¼Œç°åœ¨é»˜è®¤ç¬¬ä¸€å…³
 
-int T[30][4] = {              //7ÖÖ4*4×´Ì¬£¬¶ÔÓ¦µÄÊı¾İÊÇ4Î»Êı¶ÔÓ¦4ÖÖÇé¿ö£¨ÓĞĞ§ÊıÇ°Ãæ²»ÄÜÎªÁã²»È»»áÈÏÎªÆäËû½øÖÆ£©
+int T[30][4] = {              //7ç§4*4çŠ¶æ€ï¼Œå¯¹åº”çš„æ•°æ®æ˜¯4ä½æ•°å¯¹åº”4ç§æƒ…å†µï¼ˆæœ‰æ•ˆæ•°å‰é¢ä¸èƒ½ä¸ºé›¶ä¸ç„¶ä¼šè®¤ä¸ºå…¶ä»–è¿›åˆ¶ï¼‰
     {0000, 1011, 0000, 0000}, //T
     {1101, 1111, 111, 0000},
     {0000, 1110, 0000, 0000},
     {0000, 0000, 0000, 0000},
 
-    {0000, 0000, 0000, 0000}, //Ìï
+    {0000, 0000, 0000, 0000}, //ç”°
     {0000, 1111, 1111, 0000},
     {0000, 1111, 1111, 0000},
     {0000, 0000, 0000, 0000},
@@ -66,22 +66,22 @@ int T[30][4] = {              //7ÖÖ4*4×´Ì¬£¬¶ÔÓ¦µÄÊı¾İÊÇ4Î»Êı¶ÔÓ¦4ÖÖÇé¿ö£¨ÓĞĞ§Êı
     {101, 0000, 0000, 0000},
     {101, 0000, 0000, 0000},
 
-    {1000, 1010, 1, 0000}, //ÓÒL
+    {1000, 1010, 1, 0000}, //å³L
     {101, 1111, 101, 0000},
     {100, 1010, 10, 0000},
     {0000, 0000, 0000, 0000},
 
-    {0001, 1010, 10, 0000}, //×óL
+    {0001, 1010, 10, 0000}, //å·¦L
     {101, 1111, 101, 0000},
     {1000, 1010, 100, 0000},
     {0000, 0000, 0000, 0000},
 
-    {0000, 1111, 101, 0000}, //ÓÒÓë
+    {0000, 1111, 101, 0000}, //å³ä¸
     {101, 1111, 1010, 0000},
     {0000, 0000, 1010, 0000},
     {0000, 0000, 0000, 0000},
 
-    {101, 1111, 0000, 0000}, //×óÓë
+    {101, 1111, 0000, 0000}, //å·¦ä¸
     {1010, 1111, 101, 0000},
     {1010, 0000, 0000, 0000},
     {0000, 0000, 0000, 0000}};
@@ -91,13 +91,13 @@ int show(int out, int in, int if_auto, int class0);
 void init_brick();
 void death_line_drop(int turn);
 void check();
-void HideCursor() //¹â±êÒş²Ø
+void HideCursor() //å…‰æ ‡éšè—
 {
-    CONSOLE_CURSOR_INFO cursor_info = {1, 0}; //ºó±ßµÄ0´ú±í¹â±ê²»¿É¼û
+    CONSOLE_CURSOR_INFO cursor_info = {1, 0}; //åè¾¹çš„0ä»£è¡¨å…‰æ ‡ä¸å¯è§
     SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
 }
 
-void gotoxy(int x, int y) //×ø±êº¯Êı
+void gotoxy(int x, int y) //åæ ‡å‡½æ•°
 {
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD pos;
@@ -120,10 +120,10 @@ void init_brick()
     next_turn = next_next_turn;
     next_next_turn = rand() % 7;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), next_color);
-    show_next = 1; //´òÓ¡ÏÂÏÂ¸ö
+    show_next = 1; //æ‰“å°ä¸‹ä¸‹ä¸ª
     show(1, 1, 1, 1);
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), next_next_color);
-    show_next = 2; //´òÓ¡ÏÂ¸ö
+    show_next = 2; //æ‰“å°ä¸‹ä¸ª
     show(1, 1, 1, 1);
     show_next = 0;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), now_color);
@@ -134,7 +134,7 @@ void init_brick()
 
 void init(int pass0)
 {
-    HideCursor(); //Òş²Ø¹â±ê
+    HideCursor(); //éšè—å…‰æ ‡
     int i, j;
     system("cls");
     times = 500;
@@ -146,7 +146,7 @@ void init(int pass0)
     death_line = 8;
     height = 26;
     width = 23;
-    //ÓÎÏ·¿ªÊ¼ÑùÊ½
+    //æ¸¸æˆå¼€å§‹æ ·å¼
     for (i = 0; i <= height; i++)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), rand() % 8 + 1);
@@ -154,9 +154,9 @@ void init(int pass0)
         {
             gotoxy(j, i);
             if (i == 0 || i == height || j == 0 || j == width - 1)
-                printf("¡ö");
+                printf("â– ");
             else
-                printf("¡õ");
+                printf("â–¡");
         }
     }
     gotoxy(6, height / 2 - 2);
@@ -164,9 +164,9 @@ void init(int pass0)
     gotoxy(6, height / 2);
     printf("[Start game]");
     getchar();
-    //µã»÷¿ªÊ¼
+    //ç‚¹å‡»å¼€å§‹
     gotoxy(0, 0);
-    //¹¹½¨µØÍ¼
+    //æ„å»ºåœ°å›¾
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
     for (i = 0; i <= height; i++)
     {
@@ -191,14 +191,14 @@ void init(int pass0)
             {
                 printf("[]");
             }
-            //ÕâÀïÊÇ´Ó17ĞĞ¿ªÊ¼´òÓ¡8ĞĞ¹Ø¿¨¡£
+            //è¿™é‡Œæ˜¯ä»17è¡Œå¼€å§‹æ‰“å°8è¡Œå…³å¡ã€‚
             else if (i >= (height - 8) && pass[pass0 - 1].ss[i - (height - 8)][j / 2 - 1] != '0' && pass0 != 0)
             {
                 if (pass[pass0 - 1].ss[i - (height - 8)][j / 2 - 1] == '1')
                 {
                     map[i][j] = 2;
                     check_sum[i][0] += 2;
-                    printf("¡ö");
+                    printf("â– ");
                 }
                 else
                     printf("  ");
@@ -243,9 +243,9 @@ void init(int pass0)
     getch();
 }
 
-void death_line_drop(int turn) //0¶ÔÓ¦´òÓ¡ 1¶ÔÓ¦ÏÂ½µ
+void death_line_drop(int turn) //0å¯¹åº”æ‰“å° 1å¯¹åº”ä¸‹é™
 {
-    //Çå¿ÕËÀÍöÏß
+    //æ¸…ç©ºæ­»äº¡çº¿
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
     gotoxy(0, death_line);
     printf("[]");
@@ -257,9 +257,9 @@ void death_line_drop(int turn) //0¶ÔÓ¦´òÓ¡ 1¶ÔÓ¦ÏÂ½µ
         if (map[death_line][i] != 1)
             printf("  ");
     }
-    if (turn == 1) //ÊÇ·ñÏÂ½µ
+    if (turn == 1) //æ˜¯å¦ä¸‹é™
         death_line++;
-    //´òÓ¡ĞÂµÄËÀÍöÏß
+    //æ‰“å°æ–°çš„æ­»äº¡çº¿
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
     gotoxy(0, death_line);
     printf("{}");
@@ -282,7 +282,7 @@ void death_line_drop(int turn) //0¶ÔÓ¦´òÓ¡ 1¶ÔÓ¦ÏÂ½µ
 
 void delete_line()
 {
-    HideCursor(); //Òş²Ø¹â±ê
+    HideCursor(); //éšè—å…‰æ ‡
     int i, j, temp = 0;
     for (i = height - 1; i >= death_line; i--)
     {
@@ -296,7 +296,7 @@ void delete_line()
             }
         }
     }
-    //ÏÂ½µ
+    //ä¸‹é™
     for (i = height - 1; i >= death_line; i--)
     {
         if (check_sum[i][1])
@@ -307,7 +307,7 @@ void delete_line()
             for (j = 2; j <= width - 2; j = j + 2)
             {
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color_map[i][j]);
-                map[i][j] == 2 ? printf("¡ö") : printf("  ");
+                map[i][j] == 2 ? printf("â– ") : printf("  ");
                 map[i + check_sum[i][1]][j] = map[i][j];
             }
             gotoxy(2, i);
@@ -321,7 +321,7 @@ void delete_line()
     }
     check();
     Sleep(50);
-    //Ë¢ĞÂËÀÍöÏß
+    //åˆ·æ–°æ­»äº¡çº¿
     death_line_drop(0);
 }
 
@@ -339,7 +339,7 @@ int get_index0_num(int res, int index0)
     return ans;
 }
 
-int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯ÏÂÂä  ¸³ÖµÀàĞÍ£¨1ÔÚÒÆ¶¯ 2¶¨Î»µÄ£©
+int show(int out, int in, int if_auto, int class0) //æ˜¯å¦æ¸…é™¤ æ˜¯å¦åŠ è½½ æ˜¯å¦è‡ªåŠ¨ä¸‹è½  èµ‹å€¼ç±»å‹ï¼ˆ1åœ¨ç§»åŠ¨ 2å®šä½çš„ï¼‰
 {
     int i, j;
     int temp_x;
@@ -359,7 +359,7 @@ int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯Ï
         now_turn = (show_next == 2 ? next_next_turn : next_turn);
         tx = x, ty = y;
     }
-    if (out == 1) //Çå³ı
+    if (out == 1) //æ¸…é™¤
     {
         for (i = tx; i < tx + 4; i++)
         {
@@ -382,9 +382,9 @@ int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯Ï
             }
         }
     }
-    if (in == 1) //´òÓ¡
+    if (in == 1) //æ‰“å°
     {
-        int now_turn_index = now_turn * 4; //¶ÔÓ¦µ½µÄ³õÊ¼ÏÂ±ê
+        int now_turn_index = now_turn * 4; //å¯¹åº”åˆ°çš„åˆå§‹ä¸‹æ ‡
         for (i = x; i < x + 4; i++)
         {
             for (j = y; j < y + 4; j++)
@@ -404,9 +404,9 @@ int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯Ï
                         color_map[i][2 * j - y] = now_color;
                     }
                     if (!(class0 == 2 && i <= death_line))
-                        printf("¡ö");
+                        printf("â– ");
                 }
-                else if (i <= height && 2 * j - y <= width && get_index0_num(T[i - x + now_turn_index][j - y], index0) == 1 && map[i][2 * j - y] == 2 && if_auto == 1) //Ê§°ÜÔò»ØÍË
+                else if (i <= height && 2 * j - y <= width && get_index0_num(T[i - x + now_turn_index][j - y], index0) == 1 && map[i][2 * j - y] == 2 && if_auto == 1) //å¤±è´¥åˆ™å›é€€
                 {
                     if (show_first)
                     {
@@ -420,7 +420,7 @@ int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯Ï
                     show(1, 1, 1, 1);
                     return 0;
                 }
-                else if (i <= height && 2 * j - y <= width && get_index0_num(T[i - x + now_turn_index][j - y], index0) == 1 && map[i][2 * j - y] == 2) //Ê§°ÜÔò»ØÍË
+                else if (i <= height && 2 * j - y <= width && get_index0_num(T[i - x + now_turn_index][j - y], index0) == 1 && map[i][2 * j - y] == 2) //å¤±è´¥åˆ™å›é€€
                 {
                     int ttx = tx;
                     int tty = ty;
@@ -460,7 +460,7 @@ int show(int out, int in, int if_auto, int class0) //ÊÇ·ñÇå³ı ÊÇ·ñ¼ÓÔØ ÊÇ·ñ×Ô¶¯Ï
     return 1;
 }
 
-void check() //Í³¼ÆÃ¿²ãµÄµÃ·ÖÇé¿ö
+void check() //ç»Ÿè®¡æ¯å±‚çš„å¾—åˆ†æƒ…å†µ
 {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
     for (int i = 6; i < height; i++)
@@ -472,7 +472,7 @@ void check() //Í³¼ÆÃ¿²ãµÄµÃ·ÖÇé¿ö
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), now_color);
 }
 
-void manchange() //ÈËÎªÊäÈë¸üĞÂ
+void manchange() //äººä¸ºè¾“å…¥æ›´æ–°
 {
     char ch, ch1, ch2;
     if (kbhit())
@@ -481,7 +481,7 @@ void manchange() //ÈËÎªÊäÈë¸üĞÂ
         if (ch != ' ' && ch != 'w' && ch != 's' && ch != 'a' && ch != 'd' && ch != -32 && ch != 'p' && ch != 'b')
             return;
         if (ch == -32)
-        { //Í¬Ê±ÆôÓÃwasd  ºÍÉÏÏÂ×óÓÒ¼ü
+        { //åŒæ—¶å¯ç”¨wasd  å’Œä¸Šä¸‹å·¦å³é”®
             ch1 = getch();
             switch (ch1)
             {
@@ -527,9 +527,9 @@ void manchange() //ÈËÎªÊäÈë¸üĞÂ
         }
     }
 }
-void autochange() //×Ô¶¯¸üĞÂ
+void autochange() //è‡ªåŠ¨æ›´æ–°
 {
-    times--; //Ä£Äâsleepº¯Êı
+    times--; //æ¨¡æ‹Ÿsleepå‡½æ•°
     if (times == 0)
     {
         cnt_time++;
@@ -548,7 +548,7 @@ void autochange() //×Ô¶¯¸üĞÂ
         if (cnt_time == 20 && now_pass != 0)
         {
             cnt_time = 0;
-            //ÊÇ·ñ¿ªÆôËÀÍöÏßÏÂ½µ£º 0·ñ   1ÊÇ
+            //æ˜¯å¦å¼€å¯æ­»äº¡çº¿ä¸‹é™ï¼š 0å¦   1æ˜¯
             death_line_drop(0);
         }
     }
@@ -559,16 +559,16 @@ int main()
     system("mode con cols=50 lines=28");
     HideCursor();
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
-    printf("******   ÓÎÏ·Ãû£º  ¶íÂŞË¹·½¿éTetris Plus   ******\n");
+    printf("******   æ¸¸æˆåï¼š  ä¿„ç½—æ–¯æ–¹å—Tetris Plus   ******\n");
     printf("******                                     ******\n");
-    printf("******   ³ÌĞò×÷Õß£º 404name                ******\n");
+    printf("******   ç¨‹åºä½œè€…ï¼š 404name                ******\n");
     printf("******                                     ******\n");
-    printf("******   ²Ù×÷·½Ê½£º ¡û×óÒÆ¶¯               ******\n");
-    printf("******   ²Ù×÷·½Ê½£º ¡úÓÒÒÆ¶¯               ******\n");
-    printf("******   ²Ù×÷·½Ê½£º ¡üÉÏĞı×ª               ******\n");
-    printf("******   ²Ù×÷·½Ê½£º ¡ı¼ÓËÙÏÂ½µ             ******\n");
-    printf("******   ²Ù×÷·½Ê½£º »Ø³µÈ·ÈÏ¼ü             ******\n");
-    printf("******   ½¨ÒéÓÎÏ·×ÖºÅ´óĞ¡Îª26ºÅ            ******\n");
+    printf("******   æ“ä½œæ–¹å¼ï¼š â†å·¦ç§»åŠ¨               ******\n");
+    printf("******   æ“ä½œæ–¹å¼ï¼š â†’å³ç§»åŠ¨               ******\n");
+    printf("******   æ“ä½œæ–¹å¼ï¼š â†‘ä¸Šæ—‹è½¬               ******\n");
+    printf("******   æ“ä½œæ–¹å¼ï¼š â†“åŠ é€Ÿä¸‹é™             ******\n");
+    printf("******   æ“ä½œæ–¹å¼ï¼š å›è½¦ç¡®è®¤é”®             ******\n");
+    printf("******   å»ºè®®æ¸¸æˆå­—å·å¤§å°ä¸º26å·            ******\n");
     getchar();
     gotoxy(0, 0);
     system("mode con cols=28 lines=28");
