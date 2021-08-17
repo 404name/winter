@@ -1,0 +1,76 @@
+3000
+:.:::::.:.:::::.:::.:::::.:.:::.:::::::.:.:.:.:.:::.:::.:::.:.:.:::.:.:.:.:.:.:::.:.:.:.:::.:.:.:.:.:.:::.:.:.......................................:.:.:.:.:.:.:.:.:.:.:.:.:.:::.:.:.:::.:.:::::::.:.:.
+.:.:.:.:.:.:.:.:.:::::.:.:.:.:.:.:.:.:.:::::.:.:.:::.:.:.:::::.:.:.:.:::.:.:.:.:.:.:.:.:.:.:.:.:.:::.:.:.:.... ....................:.:............. ...:.:.:.:::.:.:.:.:::.:.:.:.:.:::.:::.:::::.:.:.:.:
+:.:::::::.:.:.:::.:.:::::.:::::::.:::.:.:::::.:.:.:.:.:.:.:.:.:.:::::::.:.:.:.:.:.:.:.:.:::.:.:.:::.:.:::....2MBBBBBBBBBBBBMBBBMMMBMMMBMBBBBBBBBBBBM: ..:.:.:.:.:.:::.:.:.:.:.:::::.:.:.:::::.:.:.:.:.::
+::::::::.:.:.:.:.:::.:::::.:::::::::.:.:.:::.:.:::.:.:.:::.:.:.:.:.:.:::::::.:::.:::::.:.:.:::.:.:::.:.:...:ZBMM8MZ000X88M008M002222222XX0XZ0088ZMMBB. ..:.:::.:.:::.:.:::.:.:.:.:::.:.:.:.:.:.:.:.:::.:
+:.:.:::.:.:.:.:.:.:.:.:.:.:...:.:::.:.:.:::.:.:.:.:::.:::.:.:.:.:.:.:.:.:::::.:.:.:.:.:.:.:.:.:::.:::.:.:..XBBM8800X0X0SS227777i::i:iir72XXXS2Z2SSX0BM:...:.:.:::.:::.:::.:::.:::::.:.:.:.:.:.:.:.:::::.
+::.:.:.:.:::.:.:.:...............:::::.....:...........:.:.:.........:.:::.:...:.:.:.:...:.:.:::::.:::::...XMS222ZZ8ZX7:::.............:i2XX2XXS222SXBB:...:::.:::::.:::.:.:.:.:.:.:.:.:.:::::.:::::.:.:
+:.:::.:::.:.:::.:....   ...r7.......:..r....... . . . ....:..7i...r...:...:...........:7....:.:.:.:::.:::..7:..:i70X7:..................:7222XX22XXXXXB8..:.:::::::.:::.:::.:.:::::.:::.:.:::.:.:::.:.:.
+::.:::::.:.:.:::.::r77XBBB BB :B: ....:BB: :00X000X0XS7..:..7B2. 0B. ........2Bi .....:BM .......:::::.:.:i. .....:: ....................r77722S2220X00BS ...:.:.:::.:.:.:.:.:::::.:.:.:.:::.:::::.:.:.:
+:.:.:::.:::.:.:..XBBBBB0X7 MB :BB0:... .BBi:BBBBBBBBBBB ... BB  .BM ..:...:...BBi i:::.0B:::::i...:::::.::: ....:.....:::...:::::.......::rr7r72S22SXXZZB7....:::.:.:.:::::.:.:.:.:.:::.:.:.:::.:.:::::.
+.:.:.:::::.:.:.:...  BS    XB   7BX..i0. 2.          BB .. 7Br  BBBBBBBBBBB7.. BBrBBBBBBBBBBBBB..:.:::.:::...........:::.::::............:i7r77772222X008M07.:::::::.:.:.:::.:.:::.:.:.:.:::.:.:::.:::.:
+:.:.:::::.:::.:....  B0 .. 2B..  :.. 7Bi          .  BB ...BB  SBr...... MB..   : .        MX ..:.:::.::i...::::::i:i::...........::::::..:irr77rr7722X08ZB2..:.:.:.:::.:.:::.:.:.:.:.:.:.:.:::::.:.:.::
+::.:::::.:::::..:BBBBBBBBBBBBBBBBBBB.rBi  BBBBBBBBr. BB   MBB rBX   BM  :BX r7ri . BB.    7B2....:::.:.i::::::::.::... .     ...:::::i:i...:irr7777272S008Z..:.:::.:.:.:.:.:.:.:.:::::.:::::::::::.:.:::
+:.:.:.:.:.:.:.:..::..B0 .. 7B:.. ::. rB:  BBrr7r7B7  BB  2BBB .7    BB  :0. BBBB:..rBB2  :B8 .:.:::::.:i:.. .........            ...:...:...:i77777727S08MZ...:.:.:::::::.:.:::.:.:::.:.:.:::::.:::.:.::
+::.:.:.:.:.:.::...   BS    .Br  .BM  rBi  BS     Br  BB 7B7MB   :B: BB 7M  .  7B.... 2BBrBM ...:::.:.::i.  ..  ..... ..::rr7ii::.  .......::.:r77772227S8BM..:.:::::.:.:.:.:::::::.:.:.:.:.:::.:::.:::::
+:.:.:::.:::.:.:....:rBBBBBZ BS iBB:..rBi  B2  . .B7  BB 7Z BB   BB. BB :BZ .. 2B.....  BBB  ..:.:.:::.i. .:.........:i772222X2227i. .....:::i::i777227220MB:..:.:.:.:.:.:.:::::::.:.:.:.:.:::.:.:::::.::
+::.:::.:::.:.:...BBBBBBS7r. MB2BM  . rBi  B8.:::iB7  BB  . BB  7B7  BB  SB:.. 2B.... .MBXBBr ..:::.:..ii7277ii::::::irr7r77772777ri:....:::::::ir7722772SMBi..::::::::.:::.:.:.:::.:::::::.:.:.:.:.:::.:
+:.:.:.:.:::.:.:..7r. BX     2BB7  :: rB:  BBBBBBBB7  BB .. BB  BB   BB   BB . 2B.  iBBB: .BBM...:.:...2222277ii:iiii7ri:rrriir77777rr::.::::::i:r72727222MB:..:.:.:::::::::::.:::.:.:.:.:::.:.:.:::.:.:.
+::.:::.:::::.:.:..   B0   iBBBM   ZB iBi  B2 ... ... BB .. BB 8B:   BB . 7B2  SB .BBB7     7BB...:.:.:2277r7ii:i:i:ir7r777rriii7r7r777r7:i:::iiir72272222MB:.:.:.:.:.:.:::::.:.:.:.:::.:.:::.:::.:.:.:.:
+:.:::::::::.:::....  B8 SBBB.:B0  BB iBi.........    BB .. BB r7    BB ...7..0BBB.7          . .:.:..:7rir777rriiiii7777r:.   .:7777777ri:::i:i:r7222222S8B:..:::::.:.:::.:::::::.:.:.:.:::.:.:::.::::::
+::::::.:.:::.:.:.7B0MBS BM:   7BBXB2 7Br........:X27SBM... BB  .7B0BB0 .....BBi BBBBBBBBBBBBBBBi.:::.:rrii:rr777rii777rr:i7777:::ir77777rr:i:i::72722222XBBi.:.:.:.:.:.:.:.:.:::.:.:.:.:::.:.:::.:.:.:.:
+:.:.:::.:.:::.:..:BBBS.........:BB0 .rBi..:.:::.:BBBBZ.....MB...rBBBS...:...7i.  .72SSXX0XXXXXX..::..:7i. ..:i777::r227i20BBBMZM8227777rri::ii::7277222XX0Br..:.:.:.:.:::.:.:.:.:::.:.:::::::::::::.:.::
+::.:::::::::::::.... ......:.:.. ........:::::....   ....:........ . ..:::.......... . . . ......:::.i7i7X887rr77. :r7riBSr2X7r222227rii:i:::i:i7222222: .::.:::.:::.:.:.:::::.:.:.:.:.:::::::.:.:.:.:::
+:.:.:.:::.:.:::.:.......:.:::.:.........:.:::.:.........:.:...:.:.....:.:.:.:.:.:.............:.:::...7X0BBBSSrr:  :i.::r::............::::::iir22222i..2MM7..:.:.:::::.:.:.:::.:.:.:::::.:.:.:::::.:::.
+.:::.:.:::.:.:.:::::.:.:::.:.:.:::.:.:.:::.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:::.:::.:.:.:.:.:.:.:.:::::.:.:iS2r7i:r::   :r:.::iriirr7i:..   ...:::iir7227r::82:2Mi..:.:.:.:.:.:::.:::::.:::::.:::.:.:.:.:.:.:
+:.:.:::::.:.:.:::::::.:.:::.:.:.:.:::.:.:.:.:.:::::.:::.:::::.:::.:.:::.:::.:.:.:.:::::::.:.:::::.:.::::::::r:i.  ..i:.:riiiiii::.... ......::ii777r7riri .Sr.:.:.:::.:.:.:.:.:.:::::.:.:.:::.:.:.:.::::
+::::.:::.:.:.:.:::::::::::::.:.:::.:.:::::.:.:.:::.:.:.:.:::.:.:.:.:::.:::.:.:.:.:.:.:::.:.:::.:.:::.:::iiii:i:    .:i::irii:i::...........::::iiri:iXX... 7i..:.:.:.:::::.:::.:.:.:.:.:.:::.:.:.:.:::.:
+:.:.:.:::.:::::.:.:.:.:::.:.:.:.:::.:.:.:.:.:.:.:.:.:::.:.:::.:::.:.:.:.:.:.:.:.:.:::.:::.:::::.:.:.:::.iiiiii:   ..:::::ir:i::.::::::::::::i:i:ii:  2B87r::i.:::.:.:.:.:.:.:.:.:.:::.:.:.:.:::::.:::.:.
+::.:::::::::.:.:::.:::.:::::.:.:::.:.:::.:.:.:.:::::.:.:::.:::.:.:.:.:::.:::.:.:.:.:::.:.:.:::.:.:.:.:..:iiiii     ..::i::::::.::ii::iii:iii:iii:::.  8B27r.:..:::.:.:::.:::.:::.:::.:::::.:.:::::.:::::
+:.:.:.:.:.:.:.:::.:::::.:::.:.:.:.:.:.:::::.:.:.:.:.:::::.:::.:::::.:::.:.:.:::.:.:.:.:::.:::.:.:.:.:::::ii:::      :i777i:....:::iirrrrririrrri:::..:722ii::.:::.:::.:.:.:.:::.:.:.:.:.:.:::.:.:.:::::.
+::::.:::::::.:.:.:::.:.:...........:.:.:...............:.:.....:.:.....:.:.:.:.:.:............::.:::.i:i:::::. ...   ..i22i..::::::rr7r7rrirr7ri:::::77rr..r::.:.:.:.:.:::.:::.:.:.:.:.:::.:.:::.:::.:.:
+:.:.:.:.:.:::.:.:.:.......... .   ..:...............................:...:.:.:........ . . . ...::.:..:i::.:.. .::::     7S7:::::iirr777rrirr7rrii:::r..  r2i..:.:.:.:.:.:.:.:.:.:.:.:::::.:::::.:::::.::
+::.:.:.:.:.:.:.:.:........:r722SMB2..:..0B :r777777777....  8B..... BM...:...... . r0XXXXXS22..:.:.:.ii:::::.:.:i7rrii:.i277:::ii7r7777rirrrrriiii::ii77.:i:.:.:.:.:.:::.:.:::::.:.:.:.:.:.:.:.:.:.:::.:
+:.:.:.:::.:.:.:.:..iBBBBBBBBBBBBMZ7.:.. BB MBBBBBBBBBB: 2BBMBBBBBBr BX  .....2X00SirB8MBBBBBB...:.:.::7ii:::7S7i778BBM772r:ii:iirr7777rirrrrrrr:iii::    .:.:.:::::::.:::::::::::.:::.:.:.:.:.:::.:.:.:.
+::.:.:::.:.:::.:...iBS..:B7   BB  .... 7B. BB       iB: .ir7rir7i.77BB77r... BBMMBS  2:    MB .:::.:..77ii:irXX272Z00ZX82:.:rrirr7r77rirr7r7rriirr::i.  :i.:::.:::.:.:::.:.:.:.:::.:::::::.:::.:::.:::.:
+:.:::.:.:.:.:.:::..:Br  .B2 . BB ..... B8  MB       iB:  0B22222B:2XBBXBB .. B0  BS .BX .. BB ..:.:.:.r77rri:.772227772r:.:.irrr7r7r7rrrr77rrirr7ri:00Sr:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:::.:.:.:.:.:.
+::::.:.:::.:.:::...iB7 ..B2 . MB .... 2Bi  MB7227222ZB.. MB22222Bi  B7 XB .. B8  B2 :B7 .. B0 .:.:::..:777r:.:iii7i::..:.::::iiiirr7r7r7r777rrr7rrri227..:.:.:.:::::.:::.:.:.:::.:.:.:.:.:.:.:.:.:.:.:.:
+:.:::.:.:.:::::.:..iB7 .:B2 . XB......BBr  BBMBBBBMMBB:  7Xr77rrX:B7B: XB .. BM  B2 7B.    B7 ..:.:::..r7rr::.:....   ..::::i:rirrrrrirrrr777r777rrr7i:.:::.:::.:.:.:.:.:::::.:.:::::.:::.:.:.:::.:::.:.
+::::::.:::.:.:::...7Br ..B2 ..7B:....BBBr  ..   Bi   .  :BMM800BB:iBB. 2B  . BM  B2 SBXSSX0BM2r..:.:.:.:7ri:....  .:i:...::iiiirrrrrirr7r7r7r7r77777ri:..:.:::.:::.:.:::::.:::::.:.:::::::.:.:.:.:::::.:
+:.:::::.:.:.:.:.:..7B:. :B2 ...BS ..7B.Br:022277B072S202     7BZr  MBB77B 7i BM  B2 7MBBBBB0MBB ..:.:.:.77i:::227r2222277r7r7rrrrr7r7r7r777r7r7r77777::...:.:::.:.:.:::.:.:.:.:.:::.:.:.:.:::.:::.:.:.:.
+::.:.:::.:::::::.. 2B....B2    BB ...  Bi:MM8XBBBBBXZMM0iXXX0BB8M77B:7M:B BM B0  B2          BX .:::.:..:7irr7S2XS2X0M00ZMM077rrirr777r77777r7r77777r:77 ......:.:.:.:.:...:.:.:.:.:.:::.:.:.:.:........
+:.:.:.:.:.:.:::::. MB ..:B7 B7 2B:.....B7    :B:B7B7    rZX72B7.:2B2    BBBr BB22B270XXX0X02.BS ..:::.:..iri7208BBBBBBBBM88S7rrr77777r77777777777727r.7B7..   ......................................  . 
+.:.:.:.:::.:.:::.. BM ...B7 8B  BB ....B7   2Br Br BB. .  0MBB  .BX  ..  BB  BBMBB2SBBBBMBBM.B2..:::::.:.i7rr77272777i:iii.::rr7r7777777777777777277:..BBMXM07ii::...:::.:.:.. . . . ... ... .  .720MX77
+..:.:.:.:.:.:.:.. 0Bi....B7.XB0 2BS ...B7 iBBr  B2 .BBMi  M0. X7 .:Br .7B.   B2  07         .B7..::.:.:.:.r7rr:ii::..:77rii:ii777777777777772722227ri:.2BM00BBBMBM8ZM88888MBB0X7272227r72XX2222X8MMBBBBB
+i ...:.:.........2BZ ...XBBBBMBi BB0...Bi2BB.  .B2 . 7BZ 7B7  MBi  BBi..BBi............:7riiBB...:.:::.:...77r:rr777777777rrr7r77772777777722222227rii.:MMM2XBMMZ0ZBZ0XZZZMM0MMBBMBBBBMM0008ZMM80MBMX22B
+B2 ........ ... .BB ..:.2B7.  BX  BB..:B7.r ....BX..... :BB ...B8...B7.. BB.....:...:..iBBBBBr..:.:::.:.....7iir77272727777r7rrr7777772727222222277rri: M8B020B8ZXX08XZ880M0XZ080MBZ0X0XXXXX80XXMMS2S22M
+MM7.   .:7722222r7  ...... ............i........r:.......i................:..:::.:.:.:..      ...:.:..... .:riiir77777r7r7rrirrrr7777772222222727777ii: 0MMM2XMM88XXXZ8M0MM0X08XX0X00XX000X80XXBMXS0XXXB
+MXM0XX00MMMMMMMMM8Xr. ... . . ......................:::.....:...:.:.:.:.....:.:.:.:.:.. ....... .......r72MBM2::rii:i:::::::iiiir7772722S2S22227777rii: XB0M02M880Z08M8008M00MMXX0B8Z880ZXZ00XMM80000XXB
+M0008MMM0Z0000X0X0ZB82:..i777riri:..   ....... . ....:::.:.:.:.:.:::.:.:.:.:.:........:MMM088802:. .  7M08MBMB7.::.::::::::iiiir7772222222222277777rii: 2B0M0XMMMM0ZMM0Z8M80ZB80ZB0X0Z00X08M0MMZ000800XB
+M0000080Z00XXXXX0X00MMM8Z8M8MMBMMM80Z0Xi:iii772777i ....:.:::::::.......:.:.:.... ... 2BZX00808MMX27720X08BMX0B:..:.::i:irr7777722222222222222277777r::.2BM08XM0MM8MM08MBMM0MBZ0B8X0Z0Z000M00MM08080Z00B
+M80000ZMZ800XXSXX0X00Z0800XXXXX000ZMMBBBMBBBBBBM8MBX. .........:....  ........ 7XZ27iiXMX000000M0MMBBMZ8ZMMM00B0.:iiirirr77777222S2S22222222222277777r:.2BB000808MX08MMMMMX0BMXMM00000000880MBZZZZ88080B
+BZ800088M8MZ800X0X0000Z00XXSSSXX008MM8ZX0X8MBBM0008BB7  . . ......7X007.  .. :0BBMBBBMZ00X0X008ZZ0888Z88MMM800MB8iiir777277722XXXSS2S2S2S2222227777777r:2MBMX0M0M80S0MM8MZ00M0MBM0Z0008008MZB8808080800B
+M8ZZ0Z0888Z80Z080000X00000XXX00008Z8Z0X0XXX00MM8XXXZBBM7r720Xr . rBM8BBBXii72M8M80X0X0X0000MMMMMZ88ZMMZ8MBMM0ZMBBBS77722222SSXSXSS2222222S222277777777r728BBX0M08MZZ08ZMM80M8ZMB008008000MZMM80ZZ808ZZ0B
+M08ZZ0Z88Z8080Z0000X000000Z000008Z8Z0X0X0XXX00MZ0X0XZMBBBBBMBB2..SMMZXMBBMMMM00M0XXX0008ZZM880M0080XM8X2ZMM88MBBBBBBB7772222S222222227222222777777777r72X0BMZXM0Z88088MMM08MZ8M080ZZ80808M8MMZ8Z8Z8ZM0ZB
+M8Z80Z0M88Z80Z0Z00X0XX00X00Z08080Z00XXX0X0000MZZX8ZZX8MM00X00ZMMM80MM0XMMB0SX08M0008ZZ080800X0Z0X808M0008BMM00MBMM8BBX:777777777777772727277777777777772X8MB808008080MMM8X0M0800888M0008MM8MMMZ88M8MZ80B
+M08ZZ08Z888Z80Z0Z00X0X0000Z0Z0Z000000000Z000ZZ80Z8M8Z0MMM00000Z88XM8M00Z8MB00XM8Z08Z800ZZ000Z8M8808MMX8Z8MMM0XMBM8MMBB7r777rrirr77777777777777777777772SX0MMMXM888M8MMMMZ0MZZZ8888MM0XZ0MMMMMZ8ZM888M88B
+M0Z8ZZZ8ZM8M8M8M8M8M880Z08888MZZ000000000Z0Z08000M8MZ00MM8X0X000X0MM88X088MM0008Z8ZZ00ZM088M8MMM88MM088Z8MMM008MMMMMMBXi777777iir7727777777777777777722SX8MBM0X08M8MMMMMXMB808MM0MMZZM088M88MM0MMMZM8MZB
+M08Z8Z8088M8MMMMM8M8M8M8M8M8M8M0Z0Z0Z0Z080808000M8M8MZZ0BM800XXX0ZM8MM8080MMZ0808Z8Z80MM88MMM8MZ88M8ZM80MMMZ0088MMMMMBBrr777777rrr77777777777777777772220MMMB82XMMMMBMMZ0MM00MMM00M0M8Z088M8M88MM8M8MZ8B
+MZZMZ8Z88M8M8M8M8M8MZ88MZ88M88080Z0M880808Z80008MM888M008BM80XSXZMZZ8MM80MZMZMM88M8MZ88M0M88088Z0MZ08M08MMM80MMM8M8MMMB2:7777777r7777777777772777777222XZB8MMM0M0MMMMMM88M0X880Z088M8M88ZMMM8M8MMM8M8MZB
+M088M8888ZM8MMM8M8MZ8Z8Z8Z80Z000Z0ZZ808ZZ000008MMMM888M8ZMB88888MMM088MM88M88MM8M8M8M0M888MZMMM0ZM80BM0ZMMB80MBMMMMMMMBBii77777777777777777777777777222XB888MM08ZMB808M0M800M00000MMZ0M888M8MZ8MMMM8M8MB
+M8Z80888Z8Z88M8M8M8M88Z80Z000Z0Z00000Z00000Z0Z8MMM888888Z8MMZ88MM808888M8MMM8MMM8M8M88MMZM8MMM88ZM0MMM088MM80BMMMM8MMMMB0:irr7777777777777777777722222SBBMZM8MX0MBM00M08BM0MMZZ80ZMM088M888M888MMMZM8M0B
+M08Z8Z888Z88M8MMM8M8M8M8MZ80Z0Z0Z000000X0X00ZZMMM8M8M88Z8Z8MMZMMM00Z88MMMZMMMMB8MMM880M88MM8MMM8MZ0MB08MM0M00BM8M8MMMMMBB2iirr7r7r7r77777777777727272SMBMZM8880XBMZ08M8MB88MB08888MM8Z88M8MMM8MMBM88M88B
+MZ88Z8Z8Z8ZM8M8M8M8MMM8M8MZM88ZZZ80Z00X0X0X08MMMM8888M8M880MMMMBMM08ZM8MM88MM8BM8MM808MM8BM88MZ8M8ZBMZ08MMM80B8MMM8MMMMBBB2::rr7r7r7r7777777777777720MBM8888Z8Z8MM8M880MBZ0BM008Z88MMMZMMM8MMM8MBB8MMM0B
+B08Z88888Z8888M8M8M8M8M8M8MZ8Z8Z8888Z00000Z8MMMMM8M888M8M88ZMMMMMM88MMMMM88MMZMM8MM888B88MMZM8M88ZMM80ZZMMBZMMMMM8MMMMMMBBB07.:irrrrr7777777777rr7X8BMM88ZMZZZ80M8MMM08MB0ZBM0M888M8MMMZMMM8MMMMBMMZM88B
+MZ8888ZMZM8M8M8M888M8M8MMM8M888M8M8M8M88ZMMMMM8MMM8M8M8M8M888MMMMM8MMMMM8M8M88MB8MM80MBM8MMM8M8MZMBM08Z8MMMM0MMM8MMMMMMBMBMBBX7:.::iiiiiii:iir72ZBBBMMMMZ8Z80MXZM80M8ZZBM00BZZMM8MZMMMZM8M8MMMMMMBMM8M8B
+MZM8M8M8M8M8M8M8M8M8MMMMM8MMMMM8M8M8MMM8MMMMMMMMM8M8M8M8M8M88MMMMMM8M8MMMMM880MMMZMZ8MB8MMM8MMM8MBB88MM0MMB8ZMM8MMMMM8MMBMMMMBBM02777777772S0MBBBMM8MMM8Z000BB0SBMMZ8ZMBM08MM0MMM888MMM8M8M8MMM8BBM8MMMB
+M8Z8ZMZ8Z8ZM8MZM888M8M8M8M8MMMMM8M8MZM8MMMMMMM8M8MMMMM8M8M8M8MMBMMMM8M8MMMMM88MBM8Z88BMM8MMM8MMMMM8Z8MM0MBM00M8MMMMMMMMBMBMMMM8BBBBBBBBBBBBBBBMMZMMMMMMM08ZBXXM0BBM80MMBM08M088M8M8MMMMMZ88MMM8MMBMMMMMB
+M08Z808Z8ZMZ888Z88M8M8M8M8MMMMM8M8M8M8M8MMMMM8MMMMM8MMM8M8M8M88MBMMMM8MMM8M8MMMMM888MBBZMMM888M8MM80MM8ZMMMX8ZM8MMB8MMBMBMM8BM8ZMMMMMMMMM8M888M8MMMMM8M808MBBi 2BB88M8BMM0MM8888MZM8MMMMM8MMMMMMMBM8MMMB
+BM8M8M8M8M8MZMZ88M8M8M8M8MMM8M8M8MMM8MMMMM8M8M8M8M8M8M8MMMMM8M8MMBMBMMMMMM8M8MMBMM8MMBM8MBM88MMMMM88MMZ8MB808M088MMM8MMMMMMMMBMM8M8M8M8MMM8MMMMMMMMM8MM8ZBBB7BM:8B8M08MB0ZMBMMZMMM8M8MMMZMMMMMMMMBMMMMMB
+BMMMMMMMMMMMM8M8M8M8M8M8M8M8M8M8M8MMMMMMMMMMMMMMMMM8M8MMM8MMM8M8MMBMMMMMMMM8MMMMMM88MMM8MMM8M8MMMMZZM8Z8M8Z0MMM8MMMZMMMMMMM8MMBMM8MMM8M8M8M8MMMMMMM888MMMBBBS.iXBMM888BM80MMM8M8MMM8MMMMMMMMMMMMMMM8MMBB
+MMBBBBBBMMMMMMMM8M8M8M8MMM8M8M8MMMMM8MMMMMMMMMMMMMMMMM8M8MMMMMMM8MMBMBMMMM8M8MMBMM88MBMMMM888MMMMM0MM8ZM000MMBMM8MZ8MM8MMMMMZMMBMM8MMM8MMMMMMM8MMM8M8MMM8BBB0BS.BBM80MBBZMMMM8ZM8M8MMMMMMMMMMMMMMBMM8MMB
+BM7:rSBBBBBBMMMMM8M8M8M8M8M8M8MMM8MMMMM8M8M8MMMMM8MMM8MMMMMMMMM8M8MMBMMMMMMMMMMMBMMZMBM8MMM8MMM8M88MMZM8008MMMBM8ZZZM88MBMM88ZMBBMMMMMMMM8M8MMM8MZM8MMBMMMBBS20:MBM088BMZ8MM8X8ZMMM8M8MMMMMMMMMMMMBMMMBB
+X:     i70BBBBBBMMMM8M8M8M8M8M8M8M8MMMMM8M8M8M8MMMMM8M8MMMMMMM8MMMMMMBMMMM8M8MMBMM8MMBMMMM888MMM88ZBM88M0MMMMBBM8BMMM8ZMMMMM888MBMMMMM8MMMMM8M88888M8MMM8BBBBXiSBBM88MM80M8M80Z8MMMM8MMM8M8MMMMMMBMMMBMB
+......... .:7XBBBBBMMMM8M8M888MZM8M8M8MMM8MMMMMMMMM8M8MMMMM8M8MMMMMMBMBMMMM8MMMMBMM8MMB8MMM8MMM8MZMM8088MMB88MBZ8MBMMMMMBMM8MM88BMM8M8888Z8Z888ZM8MZM880MMBBM:.rBMMZMMB8Z8MM8088MMMMM8MMMMM8MMMMMMMMMMMB
+...:.:......   i28BBBBMM8M8M8M8M8MMM8MMMMMMMMMMM8MMM8M8MMMMMMMMMMMMMMBMBMMMM8MMBMMMM8BMMMMMM8M8M88MM8M0MZMM8ZMM8ZBBM8BBMMMMM8MZ8MBMMZ88M88Z80ZZ8MM88Z88MBBMBM.r7MB8MMBBZ0MMM8M8ZMBMM8MMMMMMM8MMMMMMMMMMB
+:.:.:.:.:......    .iS88M8M8M8MMM8M8MMMMM8M8MMM8M8M8MMM8M8M8MMMMMMM8MMMMBMMMM8MMBMMMMMB8MM88M8M0Z0M8M880MMM00MB88MBM8MBMMMMZ808088BM8000Z00000M8M0808MBMMMBBZMB8MM88MBMX888088M0MMMMM8MMM8MMMMMMM8MMM8MB

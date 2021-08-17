@@ -1,0 +1,76 @@
+2000
+.iiii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::r22XX0M800080X22777777r7r77777r7772XXXXXX0XXXXX0X0000M0::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::i:iir7X000027:::::::::::::::::::ii772727222222SSSSXXX0M2.:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.iiii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::i7::::iir2XX7r:i:::::::i:i:iii:iiiir7777272S2S222SSXSXX08M:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:7:::i:::ii7i::i::.::::i:iii:i:i:iiiir7222722222222S2XX00ZM7.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:rr::::i:iii:::i:i:iiiirrrrriiiiiiiiiir7777272777222222XX8ZM2.:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::ri:::iiiiiiiiiirii:iiriiiririiiiii:iirr77772727272222SX008MX.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::ir:i:i:i:i:::iiiiiirirr7iiiiiririrrrriirr77772727222222SX08MX.:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:7iiirirrrrrrrrririiiiiiii:i:iirrrr7rrii:ii77772722222222XX8M0.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::rrii:iii:iiiiiii:::::::::::iirrrr7r7rrrriri77222722222222XZM0.:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:7ii:::::i:i:i::::::.:.::::i:iiririrrrr7r7r777777222222222288Mi::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:iri::::.::::i::::.:............:::iirrrr777777772222S22222S0MM7.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::ir...:::::.::::::::i:r7777r777i:.::ir7r7777777777222222222SZ8B7.:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::i:::rrriiii:i:iiir772222XXXXXS277ii:rrr77r7r7r777722222222XMBB7.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::r22222777rrrrrrrr77222222XXSSS222277iii77777r7rr722S22222007i27::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:7XXXX227777r7r77777727277722S22222277r7777777r7r7222S2S2S2..:::.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::7X2272227777r77722777777rrr7777222222277777777rr72222SSS7:788M0i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:77777777777777772227777ii:iirr77777222777r77777r72222SS77287i7M7::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::r7r7rrr7777777722S227777777777777777222777r7r7r7722222777727:.22:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:277iii77777227r7SXX272MMBMBBM800M00S27777rrr777772S2277727r77.rXi:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::777XMB8BMX722r:i7S2270X7rrr777727777rrrriri777r77227rr72MBX227:7i::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::7i72222222777:.:777777777722227ri:iiririrrrr7r77777ri:.iZMMX22iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::7r:rrr777277r:.:i7777777722227rririiiiiiirirr777r7rri::.7XXX77ri:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:::::::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:rrr72222277r:...:r7r777r7r7rr:::irrrrr7r7rrr7r7rririi:7r222S7r7i::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:::....::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::::i:i:i:i:i:i:i:::r:ir77777ri...::ir7777rrrii:iirrrr7r77777r7r77riiii:ir777i:r27::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:7MM8Br::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::i:i::::::.::i:i:i:i:i:i:i:iriirr7rrrr:..::iirri::...:::i77777777777777777rriii::7rri..77i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i::2BBBB7.::i:i:i:i:i:i:i:i:i:i:i:i:i::::...::i::.0BBB::i:i:i:i:i:i:i:ii7rrii::::i:.::i:iir727r.::iiiirr777777777777777riiii:irr27i.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i::.7BBBB7.:i:i:i:i:i:i:i:::i:::i:i:i::.:i70M.::::.0BBB.::i:i:i:::::i:i:i7iii::::77...::::7222XMS:iiririri777777777777777irrrii::...::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:::::::i:i:::::i:i:::::::.7BBBB7.::::::::i:i:i:::::::::::i:::.BBBBB..:::.XBBB.:i:::::::::::i:i:7:iiiir20i..::i:i7i...2B8rrr7r777777777777777r7rrrriiir.  :ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii::.....:::::.....::::....:.7BBBBr........::i:::..........::::. BBBBM ..::.8BBB.:::.........::i::rrrri720:.:iiriri: ..:i0BX777777777777727777r7777777iiXZS7ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:::BMMMX.:::iM88M7.:::8MMBr.7BBBB:.SBBBBXi.::::r20BBBBBM2..::7MZBBBBB08Bi:.7SX2:::.rXBBBBBBX.::i:r77r7202 .i:rr7rr:ir77200S2777772227277777777777777rri222:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:.BBBBB..:.ZBBBBM.:.iBBBB:.7BBBB2BBBBBBBBr.::.BBBBBBBBBBBr..2BBBBBBBBBB7::....::.BBBBBBBBBB.:i:::27772X2:iiii777722SX00X22227722222222777777777777777rri:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i::.rBBBBr...BBBBBB...SBBBX..7BBBBBBXSBBBBBB.::.BBX7i:r8BBBB..7B8BBBBBZMBi:::::::.MBBBB7ii70B.::i::r2222SX2777722S00Z080S722S22222222222277777777777777r7ii:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii::.BBBBX..7BBMBBB7..BBBB...7BBBBM. . MBBBB::::i      .BBBBr... MBBBM ..::i:i:i:.BBBBM    ..::i:i:r77722X2772222XXXSX227772SX22777222227277777772777277rri::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.i:i:.2BBBB  BBBrBBB8 .BBB8...7BBBBr.:..2BBBB:.:..:20MBBBBBBB7.:..BBBBM..::i:i:i::.XBBBBBBSr...::i:::77772227ir772722277rrir722S22777222777772727272727777ri:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii::..BBBB..BBB 0BBB rBBBr.:.7BBBBr.::.2BBBB:..iBBBBBBBBBBBB7.::.BBBBB.::i:i:i:i::.XBBBBBBBB2.:i:i:::7277777:ir7777777r7rrr7722S2277222277722272727272777rir:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii::.0BBBr7BBX 7BBB:2BBB.::.7BBBB7.::.2BBBB:..BBBB2:.  BBBB7.::.BBBBM..::i:i:i:i:...rXMBBBBBS.:i:i:::72777222S72222SXXXX22222S27777222227222222272727277iiii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:.iBBB0MBB:..BBBXMBB2.::.7BBBB7.::.SBBBB:.rBBBB    iBBBB7.::.BBBBB ..::i:i:i:::.     MBBBB.::i:i:::27772SX87r7S27Z27222MBB02777722227222222222722277rri:ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:.BBBBBBB...0BBBBBB..::.7BBBB7.::.2BBBB:.rBBBB0rrXBBBBB2.::.MBBBBM2Mr::i:i::.BM2i::rBBBB0.:i:i:i:::7777772Sr.ir.7X2MBBM02222772S2S22222S222222222277ri:i:::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i::.2BBBBB2.:.rBBBBBZ.:::.2BBBB7:::.0BBBBi..MBBBBBBB8BBBB2.::.rBBBBBBB7:::i:i:.BBBBBBBBBBM.:::i:i:i:::727777S0X2008BMXS77r77772222X22222X2S22222222777rii:7i::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i::.BMMMB::::.MMMMBi::i::7BMMB7::::2BMBBi::.2MBBBM7 MMMB7::::.i0BBBBBi::i:i::.SBBBBBBBXi..::i:i:i:i:::727rr722277777777727777222SXS22SXSS2S2222222277rr:::MZ:.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.iiii::::.....::i::.....::i:i::.....:::::....::::.............::i::.......::i:i:i::.........::::i:i:i:i:i:::r77r77777r7722222777777722X22SXSXS22222222277rrii:..BB::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:::::::::i:::::::::i:i:::::::i:i:::::::i:::::::::::::::i:i:::::::::i:i:i:i:::::::::::i:i:i:i:i:i:i:::i77r772277222227777777772222SSXSX2S2222227277rr::. :BM.:::::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::i:i:i:i:i:i:i:::i:i:i:i:i:i:i:i:i:i:::r77r77277727277777777772222222S2S222222222777ri:: .0Bi..::::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::7777777777777777777772222222S2S2S2S22227777rrii:.:2BB7riri:.::i:i:i:i:i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::i7i77777rrr7r7rrr77722222222SX2XSS2222777777ri::.:78B8M88MX2:.:::::i:i:i:i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::77irirrrirrrr777722222222SSXSXSXSX22227777rri:.ii7XB00Z00X087:..:::::i:i:i:i:i:i:i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i7r:iiirrrrr772222S2XSXSXSXXXSXXXS22272777rii:ir77X80X800220BMSr:...::::i:i:i:i:i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i727ririrr722222XXXXXXXSXXXXXXX2272227777irirr772SZ80Z0XXS08MMMZ0227r.::::i:i:i:i:i:i:i
+.iiii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::r2777772XXSXX000X0XXXXXXSS222222227777rrrrr777220M080X08M80ZZMMM8M807..::::::i:i:i:i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::2ZZ0X2XXXX0XXSXSSSS2222777222227777r7r7r7777228M00Z0Z08MMZ008080Z0MX7:..::::i:i:i:i
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..MBBB0i777277777722222277727277777777r7r77777228M0ZM80X0Z0Z88Z80Z080MMMX2i:.::::::i:
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..ZBMMMBrrr77777777222227272727277777777777777727MM08M00Z800S0ZMMM8808088MMM02r:.:::::
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..8BMMMMB2i77777777772222222727272777777777777777XMM0M000M0Z00000Z088M8MZ8Z88MMMZSr:.:.
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..ZBMMMM8B0i777777777222722272727277727777777777rXBB0080080000X00Z0000XZ880Z080808MMZSr:
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::i:i:i:::::i:i:i:i:i:i:::::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..ZBMMMM8MBBir77777777727272777777777777777272777ZBBMXX808000000X0000Z0000X0X000088MZ8MM0
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.:.::::i::::.::i::::.:::::...:.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..8BM88MMMMBB2i7r77777777777777777777777777777r7XBMMMMX0X808888Z0Z0Z000Z0Z00000ZX0080808Z0
+.iiii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::r:ii::i:::r:ii::::iii:i..:777i..::::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..8BMM8MMMMMMBZirr77r77777777777777777777777r77XBB880M00MM88ZMZ00MMM088M0008Z8Z00800XXXXX00
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.2BBBB7:::.2BBBB7::.BBBBM.MBBBBBBX.::i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..ZBMM8MMMMMMBBMrir7r7r77777777777777777rrrri7BBBM08ZZ00ZB0Z08Z808ZM0008Z8000000X0X0X00000XX
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:.7BBBB7.::.2BBBBr.:.BBBBBBBBBBBBBBM.::i:i:i:i:i:i:i:i:i:i:i:i:i:i::::..0BMMZMMMMMMMMBM07i:iirirr7r7rrrrrriiiiirr720BBMM08Z0000BMM8MZ00008000Z0Z00X0080000XZ0Z0ZZM0
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.7BBBB7.::.2BBBBi...BBBBBB7:.rBBBBB7.::i:i:i:i:i:i:i:i:i:i:i:i:i:::..rMBMM8MMMMMMMMBBMMB0S7i:::::::::i:ri772S0ZMBBBBMZ0000X00B07BMMZ000X0M0M8M0000X8080Z080Z08080X
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:.7BBBB7.::.7BBBBr.:.BBBBB.....:BBBBM.:i:i:i:i:i:i:i:i:i:i:i:i::::.:7ZBBMMZMMM888MMBMMM88BBBMM08XXXXX0ZMMBBBBBBBMM8M80000008MMB0SM8MZ0X008Z00Z88X008ZZ00X000000000S
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.7BBBBr.::.2BBBBi...BBBBM..::. BBBBB.::i:i:i:i:i:i:i:i:i:i::::..iXMBBMMMZMMM8M8MMMMBMM8ZZMMMBBBBBBBBBBMBMM8MZ8Z88888X0X00MB2722M8MZM0Z080008ZMM8ZM000ZX00800000000
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:.7BBBBr.::.7BBBBr.:.BBBB8 :::..BBBBB.:i:i:i:i:i:i:i:i:i:i::..i70BMMZZZ88MMBMMMMMMMBMMMBZ8Z8ZMZ8Z8ZMZ8080ZZM888M8M88X00MMBBBM7 XMM0Z0ZZ8000008Z8Z8880800ZM00008800X
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.7BBBB7... 2BBBBi...BBBBB ....rBBBBZ.::i:i:i:i:i:i:i:i:i::.:XBMMZ880088M8M888MMMMMMM8MBMZ88M8M8M888M8M8M8M8M8M888808MBBBBBMMBX2M880008ZZ080800X000080Z0MZ0X008Z00X
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::iBBBBB:..7BBBBBr.:.BBBBBZ:..rBBBBBi::i:i:i:i:i:i:i:i::::.7MBZ00880X88MMMZM8MMMMMMMMM8BM808Z8Z8888888ZM8M88Z8Z8Z88MMBBBMBBS7BMrBM88X0Z80Z08Z00Z00000000X000X80Z000
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:.BBBBBBBBBBBBBBr::.BBBBBBBBBBBBBB2.:i:i:i:i:i:i:i:i:::.rMBM000MZ00M8M8M88ZMMMMMMM888MMM0808Z888Z808Z88M88Z8Z88MMMMBMBMBMBB7.XMB8M80X8000808X000000ZX000X000080008
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.:MBBBBBB27BBBB7.:.BBBBM2BBBBBBB7.:::i:i:i:i:i:i:i:i:.7BMM0008Z008MMZ808ZMMM88MMMM888MM80Z08Z8888MZ8080Z0Z0M8MMMMMMBMBMBM2BZ 2BM80XZZZ0ZZZ00X00XX8000800000Z080MZ
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::..i2227..:rrr7:::.BBBBM .72S7i..:::i:i:i:i:i:i:i:i::2BM80008000MMM00000MMM08MBMM8808MB88Z8Z808Z808080808ZZZMMMMMMBMBMMBB7:  BB80XZ8808080Z0Z0Z00ZZ0808Z8080088Z8
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::::....::.:.:.:::.BBBBB ......::i:i:i:i:i:i:i:i:i::7BMM0008ZZ0MMM8Z000MM8Z8MBMM88Z80MMMZ8080Z0Z0808080808Z88M888BBBMMMB27B. BMMZ8MM080808Z888ZM8808880Z0M800M000
+.i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::i:i:::::i:.BBBBB.:::::::i:i:i:i:i:i:i:i:i::.2BM00X8000MMMZ8000MM88M8MMM8MZ8Z8ZM8Z000Z0Z0Z08080Z0800080MMBMBMMMMB7 B7 BM088M08Z00800Z00Z0Z0Z8MZZ088M088Z00
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i::.BBBBB.::i:i:i:i:i:i:i:i:i:i:i:i:.2MZZ088808MM8Z0008MM8MMMMMM8ZMZ808MMZ00Z0Z000Z000Z0Z088MMBMBMBMM8MMB0  r0BZ0080008Z808Z808080Z0800XZ0800080ZX
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:.BBBBB.:i:i:i:i:i:i:i:i:i:i:i:i::.0M808MM088MZ800X88M888MMM8M8MZ80Z8MM8000Z0Z000000008MMBBBMMMBMM888BZ    BM008000Z08Z008ZZZMZ800XXX00Z0000X000
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::::::::i:i:i:i:i:i:i:i:i:i:i::::MBZ88M0Z88ZZ00000M88088MMM8888080Z8M880Z000000X00MMBBBMBMMMBMMZ80MB  2  B8080ZX000088008Z0080800X00800X80000X
+.iii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::::::i:i:i:i:i:i:i:i:i:i:i:i::iBM8Z800MM8800080MMM0Z8MMMZ808Z8ZZ08MM08000000X0ZMBBMBBBMMMMMM8808M0.BB..B08080Z000Z0008880888080XXZ88XZ88X000
+.ii:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:::::i:i:i:i:i:i:i:i:i:i:i:i:i:.0M0800ZM8Z00X0000Z0Z0888ZZ08Z0000ZZM8800000008MBMBMBMBMMMMZ8000008MBBBMB000Z00000XX80XX000X0080Z000Z0Z0000XZ0

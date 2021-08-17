@@ -1,0 +1,76 @@
+4000
+                                                                                                                                                                                                       :
+                                                                                                                                                                                                       .
+                                                                                                                                                                                                       :
+                                                                                                                                                                                                       :
+                                                                                                                                                                                                       :
+                                                                                                                                                                                                       :
+                                                                                                                                                                                                       :
+                                                                                                                                      XB   Bi         B7      :B.          .rS  8B                     :
+                                                                                                                                      B0  MB. . .     SBS .....BB . .. 2BBBBBZ  BX..::..               :
+                                    7i..       r702                                                                                  MB  rBBBBBBBBBB   7B.MBBBBMMBBBBB    B:   BBZ8MBBBB7              :
+                                 .  77XXXX0XX7.  .BBS                                                                               :B2 :B7   .   BM              rB   r7:B0rrBB  27  BB               :
+                                 ::0BBBBBM8BBBBBi  .BB                                                                              BB7 00   BB  :B  BBB:  XB0    B2   2S2B0r2X   BB  S.               :
+                                  XBMX0227772XMMBX   2B.                                                                          :BXB2   r. 8B .7   .:B2    BB: BX      .BX.  iM BB B                 :
+                               .   X882777rrr2SZ8BB7  .M                                                                          7M B2  .B7 MB :B:    B7     .BBM       BB2BB BB BB BB                :
+                                   XB0272727772S02XBX   i                                                                            BS  BB  8B  0B    B7    :BB2BB     B2B: .SB  BB  BM               :
+                               .i  ZBX2SXX222222S2.27                                                                                B2 ZB   MB   BB   B:  XBB7   BBM  BB B7  B7  BB  :B7              :
+                               i.  XBSSS0222222227i:.                                                                                B2 Br   0B   :B  2B0 MM.      .B  :  B7 0B   BB   BB              :
+                              i7   MMX2X0X22222277r77                                                                                B0   rriBB      BB:BBX7i777777r72.   B2   .i:BB                   :
+                              :i .BMX2X02.i722227r777                                                                                BS   BBB8       X   .2X0088M8M8MM.   B7   rBBM                    :
+                                 :B02X27.:227X27r7722                                                      .                                                                                           :
+                               . .BX0X77irM7i77rrr28. B                                                7i.22                                                                                           :
+                                 7B8S7:22ir7:iir7rr2  B                                               0BBBBB272.  .                                                                                    :
+                                .r7i:.:irr77rirr7777i B                                              :MXMBM088BBS :r                                                                                   :
+                               :M. ..:ii:ir7rrrr77227 X                                              7i. :XBMM8BBM 7                                                                                   :
+                              2BBZ  .::irr777777270r  7                                             rS ....:72X8BB. .                                                                                  :
+                           .8BBM0B8..ir777777772202                                                .SMS:..:ii:78MBi.:                                                                                  :
+                        :78BB8800ZB0ir7777772222X0.  .                                            r.i2XS277i::2MBB7 i                                                                                  :
+                     iXBBBM888000ZMB7r77722S2X200   iX                                            :i:: i0BXZ27SBBB ir                    0r            0                   ..                          :
+                   .MBB0XX0XXXXX08MBX:7722SSZMB0i  .7                                             .r7::i:72227208  0:              :... rBX ......::   BB2 0BBBBBBBBBS  BBXXXB8:BBBBBBBB2              :
+                  7BMZ00XX00XSX0X08MM2r77XBSr27                                        .:::::::i  M7rSX2:.:r772S7  .              .BBBBBBBMBBBBBBBBB  . 7B          BB  BB...BB    B.                  :
+                :BBZ0X00Z0008Z0X008MMMM2SBBB2                                       r8BBBBBBBBBBB2M7772777772770B                      BM            :B             BM  MB:i:BM ZBBBZMB7               :
+               :BB00XXX00Z800M80X0088MMB8MMBB                                     iBBM8Z0888888MMBBr7S277772727B7                     BBBBBBBBBBBB   :B   BBBBBBBr  BM  BBi7iBB B7 r: BB               :
+               BB00XXXXX0X088ZMXXX00MMM888BMBB:                                  .BMZ000008Z88M8MMB2i77727228MM                     :BBr        2B   .B   B:    B2  B8  r7. .7i Bi BX MM               :
+              7B00X0X0X0X0X08M88X0X00M880MMMMBB0                                 BB0000008ZM88Z888MBMS22SS70BBB                    BB7BB200Z0ZXSBB   .B   B     B2  B8 XZS0M808:Br B7 MM               :
+              BM0X0X000X0000M8MM0000008800MZ88BB:                               .BM00000Z088M8M888M8MMM0S22MBMB7                  rB  BX ...... XB   .B   B     B2  B8  i7 B2   Br B. BB               :
+             7B8X000X0000808Z8MM080Z000MMZZ80MMBM                               XB0000XM8888888MZM8Z08880Z0BM8MBM                     BZ.:::::..XB   .B  .BBBBBBB7  BM  8B MBMB   2BB:                 :
+             XB00X0X00Z000Z08Z8MM0Z00000BM80MMMMB2                             2B800008MM8M8M8M8MMM0Z080000MM8MMBM                    BBX0MZ80X2BB   .B   B.        B8  BB M7   .BB  BB.               :
+             2B800X0X00800X8888M8Z000Z00ZB888M8MBB:                            2BZ0Z0ZMM8MMM8M888M880000XX0MM88MMBB                   B2        2B   :B             BM rB:BB0  0Br    7B               :
+            7BM000000X00800XZ8MMMZ00Z0800M80M00ZMB0                            XBZ80Z0MM88M8M888M8MZ800XXX8MM8MMMMB2                  B0    :BBBB0   :B.        BBBBB: BM  :8BBBBBBBBBBBZ              :
+       :72XBBB800000X0X0ZMZ008ZMMM000Z000MZ8880Z8BB                           iB0Z0008MM8MMM8M8M8M88Z0X0X08MMM8M8MBB                  :.     ...      :         :rii                                   :
+     :7::  ...880X00000X08MMMZZ8BMM0800000M88ZZ08MB.                          BB80Z0Z8MMMMM8MZMZMZM2SZXX0Z88M8M888BB                                                                                   :
+   :r  i.iiri7MZ0000X00ZX00MM808MBMM8808Z88888088MBr                        7BBB8MMMMMMMMMMM8M888MZ22X.ir0MMMM8MZMBB                                                                                   :
+    7 :0XMBMMZ80000000008XX0MM80MBM8M8M88ZMZ8Z8Z8MBi                        BB8000808MBMMMMM8888M8MMB077i0MMM8M888BB                                                                                   :
+    7  27XX0X008000000X0Z8000MMZ0BMMMM8M08MM0M888MB:                        MB00X0088MMBMMMM888MMBX72S2ZMMMM8M8M8MBB                                                                                   :
+    7  77XXZMZ000X000X0X008000MM8MMMMMMM80M888M8MMBB                        MBMZMMMZZZBMMMM888MMM7ii7rMBM8M88ZMMM8BB                    :rrrri                                                         :
+    r  iiS2BB808Z000X0XXXXSXXXX008MMMMMM8ZZM888MMMMBB                       MB0008880MBBMM888MMB220B2:BMX88M888MMMBB          .:...:.    .::SBS                                                        :
+    2  :iS2MB00ZM0Z0000XXX0000Z00XMMMMMMM0M8SX0MBMMMM8S                    rBMM8800080MMM8M8MZMX722:.rB880MMMZMMM8BB         7.                 r                                                      .
+    8  .i22MB0X80800X0000ZMBMMMBBBMMMMMM88ZB0XSMBM8MMZMB7                 :BBMMMMMMM0XXMMM8M008B7i7.:0MMMM8MMMMMMMBB        :    .       ...   :B.                                                     :
+    r  .7220B00ZZ0ZX00008000Z000Z8M000000X00BBB8BMM8MMZ8:                 7BBMMMMZM88ZMMMMMZ88M22:7XM08MMMMMMMMMMMB8       BB.:::.  .  .. ... . 2B                                                     :
+    .: :72SXBMX0ZM88000Z0MMMMM880XSXX0XXX0XXXXZM00SX2XZM:                 rBMMMMM8Z8MMMMMM8M8MMBB:rMMM8B8MMMMMMMMMB2    .  77. .       ...  .::i 7                                                     :
+     : :7rXSBBZ000MM8000ZZM8MZ8X00MMM8MMBBB00XX22222222XM7                rBBMMMMMMMBM078BBMBBBB070Z00MMMMMMMMMMMBB     B.  ..:........ ...:i.:2:                                                      :
+     i :rrXXBBZ00008ZZ000Z0M888MMM00SSX8M8XS2SSSSXX0SXSX0BB.              MBMMMMMMMM0X00iSBBBBB7iM0X20MMMMMBMBMMMB0      iX.i.          ..:777ii2Z                                                     :
+     :  7iX2BB0X000000000Z8Z000XXS008Z0XS22XXX0X0X800X0X00BB.            :BMMMMMMMBM00S...:..i8BBMMMBMBMMMMMMMM0MB7      7: r:i:..:.. ....ir772:iB                                                     :
+       .7rXS8B000008ZMZ8080Z00X8MBBMXXSXXXX0X0X0X0000000000BB7           .BMMMMMMMMBB0:ri:...  rBBMMMM8MMBMMMMMMBB.      7  ::.:......   .i7777:rBi                                                    :
+       Mr:SS8M00Z0008MM8M8MMBBBBB802XXXX0X000000000X0000Z0Z0BB2irr772XXX2XMMBMMMMMBMBBB7. ....i:rMB8MZM8MMBMMMM0SMi      2  :..  .......:.:r27r78Bi                                                    :
+       Mi:2X0BX8MM00X0088MM808MM0SSXX0X00Z088M0Z0000000Z0Z008BBBBBBBBBBBBB00MMMMMMMMMMBB2::::.ii.2BM888M8MMMMBBX . 7     . i:..ii:ii:7r..::22rr20Bi                                                    :
+       S7:7XXB008880Z088MZ8MB80XSS0000Z0Z088M88ZZ00ZZ0Z000Z0ZMBBM227777ir8X7BMMMMMMMMMMMBBBMBS:r7iMMMMM8MZ88MBB7:: iB  .::B0ri7iir::..i::722777XB0                                                     .
+       r7rrZ2SM0X00MMMZ808MB0X2X000008088M8MMM8M8M8800ZZ0800Z80X0MMM88X22MX2BBMMMMMM8M8Z08ZZ8BB7ri2B8M8M888M8BX .:.  :BBBBBS.......r:7777272722BM                                                      :
+       r2iiZXr0BBBBMM00XMBMXXX00008Z8ZM8MMMMMMMMM8M80080ZZ80808XXSXX00008X008MBMMMMMM880000XXS8MXXXMM8M8888ZMBX X7 iSB8.....iii::.:irr2rri7777X02                                                      .
+       .2ri0022B0M80X0XMM8X00008Z80MZM8MMMMMMM8MMMM8000Z0ZZZ08ZZXXX0X0X0XXXXSS0MMMMMMM8Z0ZZM00X0MBMM8M8M8MZ88B2.Mr:7MBX.   ..i70S722rrrr:7SZ027X                                                       :
+        2r:20SZ07X800XMM0X00Z0888888M8MMMMMMMM8MM0M0Z080Z0MZ8Z800X000XX00XXX0XXX0M8MBMM00Z8Z8Z8088MMM8M8M8MZ8M8ir2S2BBB0::. ...:r:727i77i72772Xi                                                       .
+        ir:20SMBX000X8B8X00ZZ8088M8M8MMMMMMMMM8BM888080ZZ8Z8Z80Z0Z00000ZX0Z80Z0XX8008MMM8MZ80808MBMBMM8M8888887:r028MBX88BZ:     .:i:rr:7Si.7Mi                                                        :
+        :7i70XB00080ZMM0ZZ8Z8Z88M8MMMMMMMMMMBMMBMZ8080ZZ808ZM880Z0000ZMX0MMZ000XXZ0XZ8MMM8MMMZ88ZS8MBMM8MZ8Z88B02M8088220BBBBBBB22S7X728r7.                                                            :
+        .7i7008BM800MM08ZM8M8M8M8MMMMMMMMMMBBMMB0ZZZ0808Z8088MZ808XX0M00MM80080X0M0XX2ZM8MMM888MSr78MMMM8MM8ZMMBMMMBBM222M0MBB0772770X7.                                                               :
+         i7700Z70B8ZM8M8M8M8M8MMMMMMMMMMMMMMBMM00080ZZZ08Z88M8M0Z00ZMZMMM00X0000MMX222MMMMM8M8M80MBBBMMMMM8MMMMMMMB77XX2X00802XS0S7XX0.                                                                :
+         :77XZ7 :BMMMM8M8M8MMMMMMMMMMMMMMMMMMB000Z0Z0ZZ8Z8Z88M88008M8MM800X0X00MMB008MMMMMMMZ88MMBMBMMMBBM7ZBBBBMMZ7rXSXXSS0X0MBXXSX8r                                                                 :
+         r7iXM2..MBMM8M8MMMMMMMMMMMMMMMMMMMMMMM0Z080ZZ808Z88MMM8008MM80X0X0000MMMMMMMX8MMMM8M8M8MBBMMMMMMXX2SS27772X00X208070BBB22220                                                                  .
+       .i77i2M7  0BB8M8MMMMMMMMMMMMMMMMMMMMMMBMM0Z080808Z8ZM8M8MZ00M008MM88MMMMMMMZS27XBMMMMMM8MMBMMMMMM72227772XZM27X2SBBBX7MMMX27i                                                                   .
+       .2r7:2BS  2BBM8M8MMMMMMMMMMMMMMMMBMMMBMBBM0Z08Z888Z8ZMMM8M0808MBMMMBMBMMMMM0727SMMMMMM8M8MMBMBMBMZ80ZBBBBBBB07XS0BMBBX202S7027.                                                                 .
+         77:7MS72X0BBMMMMMMMMMMMMMMMMMMBMBMMMBBBB8Z8880888ZM8M8M08008BMMMBMMMM8MMB0222XMMMMM8M8MMBMMMMMBZM80BBBBMBBBXS28BBBBBB..  XXXZ                                                                 .
+         iS:7MBM2r::0BBMMMMMMMBMBMBMMMMMBMBMBBBBBM88MZ8Z8ZM8M8M8M0Z008BBMZ808ZM8MMZ2S0BMMMMMM8M8MMMMBBBBMMBS778BBBM8XX08MMBB7     ..22                                                                 .
+          27i2777277i2BBBBMMMMMMMBMBMBMBMBMBBBBBBM8MZ8888M8M8MMMZZ00008M888MZM8M8B02SMBM8MMBMMMBBBBBMM0MBMS0BXr7XB822X0M88MX                                                                           .
+          2r:7rir7X2S2S8BBBBBBBBBBBBBBBBBMBMMMM00088M888M8M888MM80Z00008MMM08MMMMM02SS8MBBBBBBBBBBBBMZMZS22MBBB0772SXMB2 rr                                                                            .
+          272S2S7ri772722ZMBBBBBBBMBMMMBBBM800X0000ZZM8MZ88MZMMBM8ZZ000ZZ8088MMM8M0SXXXBBM7...   . :SBB02XSXMBMBB8SZB0                                                                                 .
+          77r277222777r:r:ii772222SXX2X2S222XX00Z0Z0XZM0808Z80MM0XX000800X0MM8MZ8M02XX0r               7M0XXX22S772r                                                                                    
