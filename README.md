@@ -1,6 +1,12 @@
 # [Winter_C_Program#2020](https://404name.github.io/winter)
 ![[object Object]](https://socialify.git.ci/404name/winter/image?description=1&descriptionEditable=C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E6%A8%A1%E6%8B%9F%E3%80%90%E8%B6%85%E7%BA%A7%E7%8E%9B%E4%B8%BD%E3%80%91%E3%80%90%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E3%80%91%E3%80%90%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E7%A7%BB%E5%8A%A8%E7%AB%AF%E3%80%91%E3%80%90%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E3%80%91%EF%BC%9B%E5%A4%A7%E4%B8%80%E5%AF%92%E5%81%87%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81%E9%9B%86-%5B%E5%96%9C%E6%AC%A2%E7%9A%84%E8%AF%9D%E5%8F%AF%E4%BB%A5%E7%82%B9%E4%B8%AAstar%E5%96%94%F0%9F%98%9D%5D&font=Rokkitt&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
-> 代码均为纯C语言，未调用任何第三方库，可以直接在任何win系统下跑
+> 代码均为纯C语言，未调用任何第三方库，用纯字符画模拟实现各种有趣的内容[ascil-art]
+> (Acii art是一种使用连续排列的ascii字符进行图形设计的技术。它可以显示在任意的文本框中。 ——维基百科.)
+> 
+> 类似好玩的创意
+> - [14行贪吃蛇 22行2048 22行俄罗斯方块 25行扫雷](https://github.com/RainbowRoad1/Cgame)
+> - [挑战用一个html页面去实现一些有趣的内容](https://onehtmlpagechallenge.com/)
+> - [智商没有250通关不了的网站nazo](https://nazo.one-story.cn/)
 
 
 
@@ -28,10 +34,9 @@
 # 传送门：[2019大一上C语言程序集合](https://github.com/404name/C-game)
 
 
-#### 度盘链接：
+#### -度盘链接-：
+已废弃，github下载不了直接联系我邮箱发送就行
 
-> 链接：https://pan.baidu.com/s/1wNxk8F240jSbN6Y90_9UVA 
-> 提取码：ros3
-
-说明：写的一些神奇的小代码，内容不太规范，现在还在慢慢学习，感兴趣的可以看看。
+说明：
+2020：写的一些神奇的小代码，内容不太规范，现在还在慢慢学习，感兴趣的可以看看。
 
