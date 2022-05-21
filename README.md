@@ -16,8 +16,21 @@
 
 
 ---
+# 开源协议 🚀
+> *本仓库代码均为个人原创，有以下几点说明*
 
-# 后续作品
+- 允许个人使用，除作业及课设外，请注明代码来源，尊重知识产权
+- 有任何使用问题欢迎提交[🎨issue](https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98)或者联系我
+- 如果对你有帮助可以点个star或者给我[☁️投个币](https://space.bilibili.com/29209613/channel/collectiondetail?sid=68276)支持一下~
+- 欢迎二次创作，有有趣的项目或者成果也欢迎提交[🎨issue]([https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98](https://github.com/404name/winter/issues/new?title=%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9+%E5%9C%B0%E5%9D%80+%E6%8F%8F%E8%BF%B0))留下地址
+
+> 类似好玩的创意
+- [我用字符模拟出了电脑，还能移动窗口！（🚀new）](https://www.bilibili.com/video/BV1Sh411H7s6?spm_id_from=333.999.0.0)
+- [14行贪吃蛇 22行2048 22行俄罗斯方块 25行扫雷](https://github.com/RainbowRoad1/Cgame)
+- [挑战用一个html页面去实现一些有趣的内容](https://onehtmlpagechallenge.com/)
+- [智商没有250通关不了的网站nazo](https://nazo.one-story.cn/)
+
+# 后续作品 🎨	
 
 2021 上半年项目                                                                                                                        | 项目内容/                                                          | 演示效果                                                                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -38,13 +51,11 @@
 | [\[04.17\] 简谱播放器](https://github.com/404name/winter/tree/master/%E7%AE%80%E8%B0%B1%E6%92%AD%E6%94%BE%E5%99%A8/C%E9%9F%B3%E4%B9%90%E9%9F%B3%E4%B9%90)     | （利用beep函数读播放取指定格式的简谱） \|纯txt源码           |          ![正在加载中 ](https://img-blog.csdnimg.cn/20201214110553107.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTU5MDg3Mg==,size_16,color_FFFFFF,t_70#pic_center)|
 | [\[06.10\] 漂流瓶](https://github.com/404name/winter/tree/master/%E6%BC%82%E6%B5%81%E7%93%B6)         | （用C模拟漂流瓶，实现类似web的分页信息管理与查看） \|纯C源码版本+C语言连接mysql数据库版本 |      ![正在加载中 ](https://img-blog.csdnimg.cn/20201214110013650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTU5MDg3Mg==,size_16,color_FFFFFF,t_70)    |
 
-# 传送门：[2019大一上C语言程序集合](https://github.com/404name/C-game)
+# 传送门：[2019大一上C语言程序集合](https://github.com/404name/C-game) 🔧
 
 
-> 类似好玩的创意
-> - [14行贪吃蛇 22行2048 22行俄罗斯方块 25行扫雷](https://github.com/RainbowRoad1/Cgame)
-> - [挑战用一个html页面去实现一些有趣的内容](https://onehtmlpagechallenge.com/)
-> - [智商没有250通关不了的网站nazo](https://nazo.one-story.cn/)
+
 说明：
 2020：写的一些神奇的小代码，内容不太规范，现在还在慢慢学习，感兴趣的可以看看。
+
 
