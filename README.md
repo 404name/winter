@@ -22,7 +22,7 @@
 - 允许个人使用，除作业及课设外，请注明代码来源，尊重知识产权
 - 有任何使用问题欢迎提交[🎨issue](https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98)或者联系我
 - 如果对你有帮助可以点个star或者给我[☁️投个币](https://space.bilibili.com/29209613/channel/collectiondetail?sid=68276)支持一下~
-- 欢迎二次创作，有有趣的项目或者成果也欢迎提交[🎨issue]([https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98](https://github.com/404name/winter/issues/new?title=%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9+%E5%9C%B0%E5%9D%80+%E6%8F%8F%E8%BF%B0))留下地址
+- 欢迎二次创作，有有趣的项目或者成果也欢迎提交[🎨issue](https://github.com/404name/winter/issues/new?title=%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9+%E5%9C%B0%E5%9D%80+%E6%8F%8F%E8%BF%B0)留下地址
 
 > 类似好玩的创意
 - [我用字符模拟出了电脑，还能移动窗口！（🚀new）](https://www.bilibili.com/video/BV1Sh411H7s6?spm_id_from=333.999.0.0)
