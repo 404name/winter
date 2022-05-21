@@ -9,7 +9,7 @@
   
 |视频演示|代码下载|网盘下载|提问&建议| 关于我 |参与开源 |
 | :---------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :-------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------:  |
-| [☁️](https://space.bilibili.com/29209613/channel/collectiondetail?sid=68276) | [💻](./Lv2提交测试) | [💾](https://pan.baidu.com/s/18jpyOxNvcGG7tfqEALL0lQ?pwd=vinz) | [🎨](https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98) | [🔧](https://www.yuque.com/404name) | [🐍](https://github.com/404name/winter/fork) | 
+| [☁️](https://space.bilibili.com/29209613/channel/collectiondetail?sid=68276) | [💻](https://github.com/404name/winter/archive/refs/tags/1.0.0.zip) | [💾](https://pan.baidu.com/s/18jpyOxNvcGG7tfqEALL0lQ?pwd=vinz) | [🎨](https://github.com/404name/winter/issues/new?title=%E7%BB%99%E5%87%BA%E4%BD%A0%E7%9A%84%E5%BB%BA%E8%AE%AE/%E9%97%AE%E9%A2%98) | [🔧](https://www.yuque.com/404name) | [🐍](https://github.com/404name/winter/fork) | 
 
 </div>
 
