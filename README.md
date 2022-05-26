@@ -25,7 +25,8 @@
 - 欢迎二次创作，有有趣的项目或者成果也欢迎提交[🎨issue](https://github.com/404name/winter/issues/new?title=%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9+%E5%9C%B0%E5%9D%80+%E6%8F%8F%E8%BF%B0)留下地址
 
 > 类似好玩的创意
-- [我用字符模拟出了电脑，还能移动窗口！（🚀new）](https://www.bilibili.com/video/BV1Sh411H7s6?spm_id_from=333.999.0.0)
+- [Java开源 字符3D空战游戏 dogfightZ（🚀new）](https://www.bilibili.com/video/BV1XU4y1T794/?spm_id_from=333.788)
+- [我用字符模拟出了电脑，还能移动窗口！](https://www.bilibili.com/video/BV1Sh411H7s6?spm_id_from=333.999.0.0)
 - [14行贪吃蛇 22行2048 22行俄罗斯方块 25行扫雷](https://github.com/RainbowRoad1/Cgame)
 - [挑战用一个html页面去实现一些有趣的内容](https://onehtmlpagechallenge.com/)
 - [智商没有250通关不了的网站nazo](https://nazo.one-story.cn/)
